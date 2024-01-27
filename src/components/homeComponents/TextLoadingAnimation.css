@@ -1,0 +1,21 @@
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    box-shadow: 0 0 20px #fff; /* Adjust the shadow properties as needed */
+  }
+  
+  .loading-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Adjust the text color as needed */
+   
+  }
+
+
+  
+
+
+  
