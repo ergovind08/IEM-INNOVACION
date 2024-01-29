@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+//redux
 const dataToStore = localStorage.getItem('innovation2024');
 const initialStateKey = dataToStore ? JSON.parse(dataToStore) : { key: 'Home' };
 
