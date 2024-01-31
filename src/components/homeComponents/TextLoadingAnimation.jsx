@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./TextLoadingAnimation.css"; // Make sure to import your component styles
 
 const TypewriterAnimation = () => {
-  const text = "Innovacion 2024";
+  const text = "";
   const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {

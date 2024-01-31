@@ -1,0 +1,73 @@
+@import url(https://fonts.bunny.net/css?family=sora:400);
+
+body {
+  background-image: url(https://i.imgur.com/0EDjmHi.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  color: #fff;
+}
+
+:root {
+  --base: #2020200f;
+}
+
+#container {
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+}
+
+.card {
+  --mouseX: 50vh;
+  --mouseY: 50vw;
+  background-color: var(--base);
+  padding: 40px;
+  margin: 10px 5px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: radial-gradient(
+    250px circle at var(--mouseX) var(--mouseY),
+    #eeeeee2f 0%,
+    var(--base) 100%
+  );
+  transition-duration: 700ms;
+  opacity: 0;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: radial-gradient(
+    300px circle at var(--mouseX) var(--mouseY),
+    #eeeeee 0%,
+    #404040 50%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+.card:hover::after {
+  opacity: 1;
+}
