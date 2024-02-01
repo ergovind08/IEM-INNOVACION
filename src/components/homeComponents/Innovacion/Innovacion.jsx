@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import innovacionImage from "./innovacion.png";
-// import "./Innovacion.css"; // Uncomment this line if you have a separate CSS file
+import "./Innovacion.css";
 
 const Innovacion = () => {
   const controls = useAnimation();
