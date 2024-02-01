@@ -53,12 +53,12 @@ const Navbar = () => {
             <div className="container flex items-center justify-between mx-auto">
                 <div className="flex items-center justify-between">
                     <img onClick={() => navigate('/')} src="https://iem-innovacion.com/Home%20Page/assets/media/logo.png" alt="logo" className='h-10 ' />
-                    {/* <button
+                    { <button
                         onClick={() => setShowNavItems(!showNavItems)}
                         className="text-white focus:outline-none md:hidden"
                     >
                         ☰
-                    </button> */}
+                    </button> }
                 </div>
                 <motion.div
                     className={` transition-opacity flex items-center`}
