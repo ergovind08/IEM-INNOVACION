@@ -16,10 +16,11 @@ const Home = () => {
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 w-full h-full mt-20 overflow-auto">
       <Hero />
-      {/* <Innovacion /> */}
+
       <AboutTheEvent />
       <CountDown />
       <Events />
+
       <Registeration />
       <Media />
       <Partners />

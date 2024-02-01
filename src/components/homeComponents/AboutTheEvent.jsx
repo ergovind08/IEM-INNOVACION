@@ -1,29 +1,42 @@
-import React from "react";
+// import React from "react";
 import { motion } from "framer-motion";
 import EventCard from "./aboutTheEvents/EventCard";
 import { EventsCardContent } from "../../assets/assestscript";
 import TypewriterAnimation from "./TextLoadingAnimation";
+
+const Animatedlogo = [
+  {
+    id: 1,
+    logo: "https://lottie.host/embed/7ed392e2-c908-4bcd-bbc2-d3b85b0eadc1/aB0zavxvpi.json",
+  },
+  {
+    id: 2,
+    logo: "",
+  },
+];
 
 const AboutTheEvent = () => {
   return (
     <motion.div
       initial={{ scale: 0 }}
       animate={{ scale: 1.2 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
       className="p-5"
     >
       <TypewriterAnimation />
-      <div className="container bg-slate-900 border-fuchsia-500 p-3 w-1/2 border-y-4 rounded">
-        <p className="brightness-80 mx-auto">
-          Institute of Engineering & Management, Kolkata in association with
-          University of Engineering & Management is organising its Annual
-          Techno-Management Fest-Innovación <span>2024</span> from 10th - 12th
-          March, <span>2024</span>
-        </p>
+      <div>
+        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
+          <p className="brightness-80 mx-auto ">
+            Institute of Engineering & Management, Kolkata in association with
+            University of Engineering & Management is organising its Annual
+            Techno-Management Fest-Innovación <span>2024</span> from 10th - 12th
+            March, <span className="text-cyan-200">2024</span>
+          </p>
+        </div>
       </div>
 
       <div className="flex flex-col justify-center w-full p-4">
-        <h3 className="text-2xl font-bold text-center">
+        <h3 className="text-2xl font-bold text-center text-gray-300">
           APPLY HERE TO BE OUR CAMPUS AMBASSADOR
         </h3>
 

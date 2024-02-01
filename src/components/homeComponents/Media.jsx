@@ -1,6 +1,5 @@
 // import React from "react";
 import "react-slideshow-image/dist/styles.css";
-// import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const images = [
@@ -20,23 +19,29 @@ const images = [
     url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/9.png",
   },
 ];
+
 const Media = () => {
   return (
-    <div className="w-full p-2 bg-[#111111] bg-opacity-70 ">
+    <div className="w-full  ">
       <h2 className="w-full my-4 text-5xl italic font-bold text-center">
         MEDIA
       </h2>
-      <div className="w-20 h-1 mx-auto ml-3 mt-4 text-gray-100 bg-gray-100 rounded"></div>
-      <div className="grid mx-auto ml-3 w-full p-5 grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 grid-col-1">
-        {images.map((image, index) => (
-          <div key={index} className="">
+      <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
+      <div className="flex ">
+        <marquee
+          className="w-full flex shadow-cyan-300/10 shadow-cyan-300*10  shadow-xl"
+          direction="right"
+          scrollamount="10"
+        >
+          {images.map((image, index) => (
             <img
+              key={index}
               src={image.url}
               alt=""
-              className="object-contain ml-9 w-60 h-60"
+              className="object-contain  flex-col shadow-2xl  p-2 mx-2 w-60 h-60"
             />
-          </div>
-        ))}
+          ))}
+        </marquee>
       </div>
     </div>
   );

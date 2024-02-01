@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import "./CountDown.css";
 
 const AnimatedBorder = ({ children }) => {
   return (
@@ -52,9 +53,13 @@ const Countdown = () => {
   }, [targetDate, controls]);
 
   return (
-    <div className="flex  ">
-      <motion.h1 className="text-slate-600 sm:text-center underlinedecoration-pink-500/30 shadow-2xl font-mono hover:text-sky-700 font-bolder text-7xl container">
-        Comming Soon
+    <div className="flex  conatainer relative ">
+      <iframe
+        className="iframe-background"
+        src="https://lottie.host/embed/2cd47093-3563-43f8-bee0-f846dbeaa7ee/50VNWGIBAl.json"
+      ></iframe>
+      <motion.h1 className="text-slate-600  text-bold sm:text-center underline decoration-sky-500/30 shadow-2xl font-mono hover:text-sky-700  text-7xl container">
+        Coming <span style={{ opacity: 0 }}>soon</span>
       </motion.h1>
       <motion.div animate={controls} className="">
         <div className="grid grid-cols-5 gap-3">
