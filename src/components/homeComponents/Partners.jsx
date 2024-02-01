@@ -11,7 +11,7 @@ const Partners = () => {
       </h2>
       <div className="w-20 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
 
-      <div className="relative flex items-center justify-center w-full h-full py-4">
+      <div className=" flex items-center justify-center w-full h-full py-4">
         <div className="relative p-20 border-2 border-none rounded-full profileCard_container border-spacing-4 border-gray-400/50 animated-border">
           <motion.div
             className="relative p-20 border-5 border-dashed rounded-full profileCard_container border-spacing-4 border-gray-400/50 animated-border"

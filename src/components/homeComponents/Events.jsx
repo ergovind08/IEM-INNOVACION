@@ -85,7 +85,7 @@ function Events() {
         }
     ];
     return (
-        <div className=" h-fit bg-opacity-10 z-[100] bg-blue-500">
+        <div className=" h-fit bg-opacity-10 z-[100] bg-blue-500 m-0">
             <h3 className="my-4 text-5xl italic font-bold text-center ">Events</h3>
             <div className="w-20 h-1 mx-auto text-gray-100 bg-gray-100 rounded" ></div>
             <motion.div className="grid w-full grid-cols-1 gap-4 py-4 md:grid-cols-2 lg:grid-cols-3"

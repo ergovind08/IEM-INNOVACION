@@ -17,7 +17,7 @@ const TypewriterAnimation = () => {
   }, []);
 
   return (
-    <h1 className="text-7xl select-none text-cyan-400 text-bold p-5 text-center">
+    <h1 className="text-[45px] flex justify-center sm:text-7xl mt-4 sm:m-0 select-none text-cyan-400 text-bold p-5 text-center">
       <b>{displayText}</b>
     </h1>
   );

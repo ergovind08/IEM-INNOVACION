@@ -11,7 +11,7 @@ const Innovacion = () => {
   }, [controls]);
 
   return (
-    <div className="container w-1/3 justify-center">
+    <div className="container w-3/5 sm:w-[30%] p-0 justify-center">
       <motion.div animate={controls}>
         <motion.img
           className="img"

@@ -27,13 +27,15 @@ const Media = () => {
         MEDIA
       </h2>
       <div className="w-20 h-1 mx-auto ml-3 mt-4 text-gray-100 bg-gray-100 rounded"></div>
-      <div className="grid mx-auto ml-3 w-full p-5 grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 grid-col-1">
+
+
+      <div className="grid mx-0 w-full p-5 grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 grid-col-1">
         {images.map((image, index) => (
-          <div key={index} className="">
+          <div key={index} className="w-full">
             <img
               src={image.url}
               alt=""
-              className="object-contain ml-9 w-60 h-60"
+              className="object-contain sm:ml-9 w-[200px] h-[200px] sm:w-60 sm:h-60"
             />
           </div>
         ))}

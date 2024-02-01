@@ -3,14 +3,14 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-
+import "./CountDown.css";
 
 
 
 
 const AnimatedBorder = ({ children }) => {
     return (
-        <div className="flex items-center justify-center text-center ">
+        <div className=" w-[75px] sm:w-full h-auto flex items-center justify-center text-center">
             <motion.div
                 className="px-4 py-3 bg-[#000] border-4 rounded-full"
                 initial={{ borderColor: '#000' }}
@@ -22,11 +22,11 @@ const AnimatedBorder = ({ children }) => {
                         repeatType: 'loop',
                         ease: 'linear',
                     },
-                }}
-            >
+                }}>
                 {children}
             </motion.div>
         </div>
+
     );
 };
 
@@ -37,6 +37,7 @@ const Countdown = () => {
     const controls = useAnimation();
 
     useEffect(() => {
+
         const interval = setInterval(() => {
             const updatedTime = getTimeRemaining(targetDate);
             setTimeRemaining(updatedTime);
@@ -57,24 +58,24 @@ const Countdown = () => {
     }, [targetDate, controls]);
 
     return (
-        <div className="flex items-center">
+        <div className="flex w-[90%] sm:w-[90%] items-center justify-center sm:justify-end count-card sm:px-5">
             <motion.div animate={controls} className="">
-                <div className="grid grid-cols-5 gap-3">
+                <div className="flex justify-around items-center sm:gap-2 w-[90%] sm:px-10">
                     <AnimatedBorder className="text-center">
-                        <div className="text-5xl font-semibold">{timeRemaining.days}</div>
-                        <div className="text-xl">Days</div>
+                        <div className=" text-xl sm:text-5xl font-bold sm:font-semibold">{timeRemaining.days}</div>
+                        <div className=" text-sm sm:text-xl font-semibold">Days</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-5xl font-semibold">{timeRemaining.hours}</div>
-                        <div className="text-xl">Hours</div>
+                        <div className=" text-xl sm:text-5xl font-bold sm:font-semibold">{timeRemaining.hours}</div>
+                        <div className=" text-sm sm:text-xl font-semibold">Hours</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-5xl font-semibold">{timeRemaining.minutes}</div>
-                        <div className="text-xl">Minutes</div>
+                        <div className=" text-xl sm:text-5xl font-bold sm:font-semibold">{timeRemaining.minutes}</div>
+                        <div className=" text-sm sm:text-xl font-semibold">Minutes</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-5xl font-semibold">{timeRemaining.seconds}</div>
-                        <div className="text-xl">Seconds</div>
+                        <div className=" text-xl sm:text-5xl font-bold sm:font-semibold">{timeRemaining.seconds}</div>
+                        <div className=" text-sm sm:text-xl font-semibold">Seconds</div>
                     </AnimatedBorder>
                 </div>
             </motion.div>
@@ -111,15 +112,16 @@ function getTimeRemaining(targetDate) {
 }
 
 function App() {
-    return (
-        <div className='w-full my-8 h-[300px] flex justify-end items-center bg-cover bg-no-repeat'
-            style={{ backgroundImage: "url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg')" }}
-
-        >
+    return (<>
+        <div className='w-full mt-8 mb-0 h-[220px] sm:h-[300px] flex justify-end sm:justify-between items-center bg-cover bg-no-repeat px-3'
+            style={
+                { backgroundImage: "url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg')"
+            }}>
+            <div></div>
             <Countdown />
         </div>
+        </>
     );
 }
 
 export default App;
-

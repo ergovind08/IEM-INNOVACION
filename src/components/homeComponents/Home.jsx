@@ -13,7 +13,7 @@ import Innovacion from "./Innovacion/Innovacion";
 
 const Home = () => {
   return (
-    <div className="fixed top-0 bottom-0 left-0 right-0 w-full h-full mt-20 overflow-auto">
+    <div className="fixed top-0 bottom-0 left-0 right-0 w-full h-full mt-20 overflow-x-hidden">
       <Innovacion />
       <AboutTheEvent />
       <CountDown />
