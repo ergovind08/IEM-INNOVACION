@@ -1,21 +1,16 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import innovacionImage from "./innovacion.png";
-<<<<<<< HEAD
-import "./Innovacion.css"; // Uncomment this line if you have a separate CSS file
-=======
 import "./Innovacion.css";
->>>>>>> origin/futureadda
 
 const Innovacion = () => {
   const controls = useAnimation();
 
   useEffect(() => {
+    // Use the controls.start function directly in the setTimeout callback
     setTimeout(() => {
       controls.start({
         x: [null, 200, 0],
-        // y: [null, 20, 0],
-        // z: [null, 20, 0],
         opacity: 0.1,
       });
     }, 200);
@@ -23,15 +18,17 @@ const Innovacion = () => {
 
   return (
     <div className="container opacity-0.3 justify-center">
+      {/* Use motion.div for the parent container */}
       <motion.div animate={controls}>
         <motion.img
-          className="img  "
+          className="img"
           src={innovacionImage}
           alt="Description of the image"
         />
-        {/* Use an SVG circle element for animation */}
-        <motion.circle cx={500} r={20} animate={{ cx: [null, 100] }} />
+        {/* Commenting out the motion.circle, as it might throw an error without proper context */}
+        {/* <motion.circle cx={500} r={20} animate={{ cx: [null, 100] }} /> */}
       </motion.div>
+      {/* Add some content inside the motion.button or remove it if not needed */}
       <motion.button
         initial={{ opacity: 0.6 }}
         whileHover={{
