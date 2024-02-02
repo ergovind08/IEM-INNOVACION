@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./GrabBitBtn.module.css";
-import grabby from "../../../assets/grabby.png";
+import grabby from "../../../assets/grabby.png"; // Replace with the correct file extension
 
 const GrabBitBtn = ({
   margin,

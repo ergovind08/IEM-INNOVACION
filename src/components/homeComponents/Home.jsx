@@ -11,6 +11,7 @@ import Partners from "./Partners";
 import Media from "./Media";
 import Innovacion from "./Innovacion/Innovacion";
 import Hero from "../Hero/Hero";
+import Navbar from "../navbarComponents/Navbar";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
 
       <AboutTheEvent />
+      <Navbar />
       <CountDown />
       <Events />
 

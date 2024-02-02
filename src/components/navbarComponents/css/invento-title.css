@@ -1,0 +1,12 @@
+@font-face {
+	font-family:titlefont;
+	src: url(../fonts/DeathHector.otf) format('truetype');
+}
+body {
+	margin:0;
+	text-align: center;  color: #fff;
+	overflow: hidden;
+}
+#intro-wrap h1{
+	font-family: titlefont; font-weight: 100; letter-spacing:5px;}
+}

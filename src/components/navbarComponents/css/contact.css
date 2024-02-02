@@ -1,0 +1,31 @@
+/* this is css for contact us sub section */
+
+/* contact us social icon */
+ul.icon_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin-top: 20px;
+}
+ul.icon_list li{
+	display: inline;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+ul.icon_list li a{
+	display: inline-block;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 50%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	transition: all 1s;
+}
+ul.icon_list li a:hover{
+	color: #f73b56;
+	border-color:#f73b56; 
+}

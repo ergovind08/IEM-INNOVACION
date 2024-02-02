@@ -1,0 +1,3 @@
+@for $i from 1 to 10 {  
+ 	#date#{$i} { animation-delay:3+$i; }  
+}   

@@ -1,0 +1,119 @@
+/* css file for every sub section */
+.pop-up{
+	height:100%;position:absolute;top:0;right:0;left:0;text-align:center;
+}
+.body{
+	margin:40px;
+	padding:20px;
+	background: rgba(255,255,255,.1);
+	font-size: 20px;
+	font-family:raleway;
+	height:90%;
+	border-radius:15px;
+	/*overflow-y: scroll;*/
+	border: 2px solid transparent;
+}
+
+.pop-up > .body:hover{
+	background: rgba(255,255,255,.12);				
+}
+
+
+.header{
+	padding-bottom:10px;
+	margin:auto;
+	font-size:1.5em;
+}
+.header .title{
+	font-size:1.5em;
+	text-transform: uppercase;
+	/*text-decoration: underline;*/
+}
+
+.header button{border:none;background:transparent;outline:none;}
+
+.header .title{
+	width:90%;
+}
+.header .close-btn{
+	width:10%;
+	text-align: right;
+}
+.content{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right: 20px;
+	overflow-y:scroll;
+	height: inherit;
+	text-align:justify;								
+}
+.close-btn{
+	float: 		right;
+	cursor: 	pointer;
+	cursor: 	hand;
+	display: 	inline-block;
+}
+/* Close Button Animation */
+.close-btn img{
+	/*top: 5px;*/
+	/*right: 5px;*/
+	/*height: auto;*/
+	/*position: absolute;*/
+	float: right;
+
+	-webkit-transition: -webkit-transform .25s, opacity .25s;
+	-moz-transition: -moz-transform .25s, opacity .25s;
+	transition: transform .25s, opacity .25s;
+	opacity: .75;
+}
+.close-btn img:hover {
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	transform: rotate(270deg);
+	opacity: 1;
+}
+
+/* customized scroll bar */
+.content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: transparent;
+	border-radius: 10px;
+	border: solid 3px transparent;
+}
+
+.content::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb
+{
+	/*background-color: #0ccfc1;*/
+	border-radius: 5px;
+	background-color: transparent;;
+	background-image: -webkit-gradient(linear,
+						   40% 0%,
+						   75% 84%,
+						   from(#0ccfc1),
+						   to(#0ccfc1),
+						   color-stop(.6,#60daaa));
+}
+
+@media only screen and (max-width: 700px) {
+
+	#sample{
+		margin:20px;   
+	}
+	.body{
+		font-size: 12px;
+		margin:5px;
+		padding-left:3px;
+		padding-right:3px;
+		height : 98%;
+	}
+	.content{
+		padding-right: 10px;
+	}
+}

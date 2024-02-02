@@ -1,0 +1,24 @@
+@for $i from 1 to 4 {  
+ 	#date span:nth-child(#{$i}) { animation-duration:2+$i *0.1s;}  
+}  
+@for $i from 0 to 9 {  
+ 	#clg span:nth-child(#{$i}) { animation-duration:1+$i *0.1s; }  
+} 
+
+@for $i from 1 to 8 {  
+  .invento span:nth-child(#{$i}) { animation-duration:$i *0.5s; }  
+}
+.invento span{display: inline-block;animation:anim-invento ease-in;}
+
+@keyframes anim-invento {
+  0% {
+    transform:rotateZ(90deg);opacity:0;
+  }  
+  60% {
+  opacity:0;
+  }
+  100% {
+    transform:rotateZ(0deg);
+    opacity:1;
+  }
+}
