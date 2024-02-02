@@ -28,20 +28,20 @@ const Media = () => {
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
       <div className="flex ">
-        <marquee
-          className="w-full flex shadow-cyan-300/10 shadow-cyan-300*10  shadow-xl"
-          direction="right"
-          scrollamount="10"
-        >
-          {images.map((image, index) => (
+        {images.map((image, index) => (
+          <marquee
+            className="w-full shadow-cyan-300/10 shadow-cyan-300*10  shadow-xl"
+            direction="right"
+            scrollamount="10"
+          >
             <img
               key={index}
               src={image.url}
               alt=""
-              className="object-contain  flex-col shadow-2xl  p-2 mx-2 w-60 h-60"
+              className="object-contain shadow-2xl  p-2 mx-2 w-60 h-60"
             />
-          ))}
-        </marquee>
+          </marquee>
+        ))}
       </div>
     </div>
   );

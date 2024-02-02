@@ -10,7 +10,7 @@ import Footer from "../footer/Footer";
 import Partners from "./Partners";
 import Media from "./Media";
 import Innovacion from "./Innovacion/Innovacion";
-import Hero from "../../Sambhav-Website/client/src/components/Hero/Hero";
+import Hero from "../Hero/Hero";
 
 const Home = () => {
   return (

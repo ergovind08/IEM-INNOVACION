@@ -1,0 +1,43 @@
+.btn_container {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+.btn {
+  all: unset;
+  background-color: #000;
+  background-image: linear-gradient(to bottom right, #ff00ee, #ff0932);
+  /* border: 2px solid #000000; */
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.img {
+  width: 50px;
+  position: absolute;
+  right: 4px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  /* border: 2px solid #000; */
+}
+.btn_container:hover .img {
+  transform: translateY(-22px);
+  opacity: 1;
+}
+/* .btn_container:hover .img {
+	transform: translate(20px, -10px) rotate(20deg);
+	z-index: 2;
+	opacity: 1;
+} */
