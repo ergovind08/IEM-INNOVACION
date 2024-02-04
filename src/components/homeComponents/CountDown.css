@@ -9,9 +9,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Increase the width to make it larger */
+  width: 100%;  /* Increase the width to make it larger */
   height: 150%; /* Increase the height to make it larger */
   opacity: 1;
   z-index: 50;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .iframe-background{
+    top: 60px;
+    left: 70px;
+    width: 60%;
+    height: 79%;
+  }
 }

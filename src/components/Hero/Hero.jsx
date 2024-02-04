@@ -10,10 +10,10 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={`${classes.hero} justify-center w-full h-full -z-30   `}
+        className={`${classes.hero} justify-center w-full h-full -z-30`}
       >
         <div className={`${classes.herobox}`}>
-          <Innovacion className="w-screen   z-200  my-[200px] " />
+          <Innovacion className="w-screen z-200  my-[200px] " />
           <div className={classes.headerbox}>
             <h1 className={`${classes.heading} `}>Innovacion</h1>
             <p className={classes.date}>March 20-21, 2024</p>
