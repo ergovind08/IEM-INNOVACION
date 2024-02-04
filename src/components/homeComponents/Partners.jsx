@@ -11,67 +11,67 @@ const Partners = () => {
       </h1>
       <div className="w-20 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
 
-      <div className="relative flex items-center justify-center w-full h-full ">
+      <div className="relative flex items-center justify-center w-[26em] h-[30em] sm:w-full sm:h-full ">
         <div className="relative p-20 border-2 border-none rounded-full profileCard_container border-spacing-4 border-gray-400/50 animated-border">
           <motion.div
-            className="relative py-40 px-40 border-2 border-dashed bg-zinc-900 rounded-full profileCard_container border-spacing-4 border-amber-300 animated-border"
+            className="relative py-[75px] px-[75px] sm:py-40 sm:px-40 border-2 border-dashed bg-zinc-900 rounded-full profileCard_container border-spacing-4 border-amber-300 animated-border"
             initial={{ rotate: 0 }}
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
           >
-            <button className="profile_item left-[45px] -top-[6px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-200">
+            <button className="profile_item left-[45px] -top-[6px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-200">
               <img
                 src={m_images[0].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-slate-800"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-slate-800"
               />
             </button>
 
-            <button className="profile_item right-[43px]  bg-slate-900 -top-[6px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[43px]  bg-slate-900 -top-[6px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[1].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
               />
             </button>
 
-            <button className="profile_item -left-6 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -left-6 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[2].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
               />
             </button>
 
-            <button className="profile_item -right-6 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item -right-6 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[3].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
               />
             </button>
 
-            <button className="profile_item bottom-9 -left-0 absolute rounded-full bg-cover cursor-pointer border-2 border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item bottom-9 -left-0 absolute rounded-full bg-cover cursor-pointer border-2 border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[0].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-white"
               />
             </button>
 
-            <button className="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[1].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] object-contain transition-all duration-500 rounded-full z-[2] bg-white"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] object-contain transition-all duration-500 rounded-full z-[2] bg-white"
               />
             </button>
 
-            <button className="profile_item right-[40%] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[20px] active:scale-95 hover:scale-95 transition-all duration-500">
+            <button className="profile_item right-[40%] -bottom-6 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[5px] active:scale-95 hover:scale-95 transition-all duration-500">
               <img
                 src={m_images[2].url}
                 alt="img.png"
-                className="w-[100px] h-[100px] transition-all duration-500 rounded-full z-[2] bg-white object-contain"
+                className=" w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] transition-all duration-500 rounded-full z-[2] bg-white object-contain"
               />
             </button>
 
