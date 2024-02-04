@@ -25,7 +25,7 @@ const AboutTheEvent = () => {
     >
       <TypewriterAnimation />
       <div>
-        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
+        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 sm:w-1/2 border-y-4 rounded">
           <p className="brightness-100 font-extrabold mx-auto ">
             Institute of Engineering & Management, Kolkata in association with
             University of Engineering & Management is organising its Annual
@@ -44,7 +44,7 @@ const AboutTheEvent = () => {
           CLICK HERE!
         </button>
       </div>
-      <div className="flex flex-wrap text-cyan-400  flex-row-reverse items-center justify-between w-3/4 gap-4 px-8 py-4 mx-auto">
+      <div className="flex flex-wrap text-cyan-400  flex-row-reverse items-center justify-around sm:w-[80%] w-full gap-3 sm:px-8 py-4 mx-auto">
         {EventsCardContent.map((item, index) => {
           return (
             <EventCard

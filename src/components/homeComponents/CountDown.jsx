@@ -6,7 +6,7 @@ const AnimatedBorder = ({ children }) => {
   return (
     <div className="flex items-center justify-center text-center ">
       <motion.div
-        className="px-4 py-7 bg-slate-950 border-2 rounded-full"
+        className="px-4 py-3 sm:py-7 bg-slate-950 border-2 rounded-full"
         initial={{ borderColor: "#000" }}
         animate={{
           borderColor: ["#f00", "#0f0", "#00f", "#f00", "#04f"], // You can add more colors here for variation
@@ -53,37 +53,39 @@ const Countdown = () => {
   }, [targetDate, controls]);
 
   return (
-    <div className="flex  conatainer relative ">
+    <div className="flex sm:flex-row flex-col relative ">
+
       <iframe
         className="iframe-background"
         src="https://lottie.host/embed/2cd47093-3563-43f8-bee0-f846dbeaa7ee/50VNWGIBAl.json"
       ></iframe>
-      <motion.h1 className="text-slate-600  text-bold sm:text-center underline decoration-sky-500/30 shadow-2xl font-mono hover:text-sky-700  text-7xl container">
-        Coming <span style={{ opacity: 0 }}>soon</span>
+      <motion.h1 className="text-slate-600 text-bold sm:text-center underline decoration-sky-500/30 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container">
+        Coming<span style={{ opacity: 0.2 }}> soon</span>
       </motion.h1>
-      <motion.div animate={controls} className="">
-        <div className="grid grid-cols-5 gap-3">
+
+      <motion.div animate={controls} className="grid mb-10 sm:grid-cols-5 grid-cols-2 sm:grid-rows-1 gap-3">
+
           <AnimatedBorder className="   text-center">
-            <div className="text-5xl font-semibold">{timeRemaining.days}</div>
-            <div className="text-xl">Days</div>
+            <div className=" text-3xl sm:text-5xl font-semibold">{timeRemaining.days}</div>
+            <div className=" text-lg sm:text-xl">Days</div>
           </AnimatedBorder>
           <AnimatedBorder className="text-center">
-            <div className="text-5xl font-semibold">{timeRemaining.hours}</div>
-            <div className="text-xl">Hours</div>
+            <div className=" text-3xl sm:text-5xl font-semibold">{timeRemaining.hours}</div>
+            <div className=" text-lg sm:text-xl">Hours</div>
           </AnimatedBorder>
           <AnimatedBorder className="text-center">
-            <div className="text-5xl font-semibold">
+            <div className=" text-3xl sm:text-5xl font-semibold">
               {timeRemaining.minutes}
             </div>
-            <div className="text-xl">Minutes</div>
+            <div className=" text-lg sm:text-xl">Minutes</div>
           </AnimatedBorder>
           <AnimatedBorder className="text-center">
-            <div className="text-5xl font-semibold">
+            <div className=" text-3xl sm:text-5xl font-semibold">
               {timeRemaining.seconds}
             </div>
-            <div className="text-xl">Seconds</div>
+            <div className=" text-lg sm:text-xl">Seconds</div>
           </AnimatedBorder>
-        </div>
+
       </motion.div>
     </div>
   );
@@ -119,7 +121,7 @@ function getTimeRemaining(targetDate) {
 
 function App() {
   return (
-    <div className="w-full h-[300px] flex  ml-5 justify-center items-center bg-cover bg-no-repeat">
+    <div className="w-full h-[300px] flex my-2 py-2 sm:ml-5 justify-center items-center bg-cover bg-no-repeat">
       <Countdown />
     </div>
   );
