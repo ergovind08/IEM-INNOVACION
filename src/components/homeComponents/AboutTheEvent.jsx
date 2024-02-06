@@ -29,7 +29,7 @@ const AboutTheEvent = () => {
           <p className="brightness-100 font-extrabold mx-auto ">
             Institute of Engineering & Management, Kolkata in association with
             University of Engineering & Management is organising its Annual
-            Techno-Management Fest-Innovación <span>2024</span> from 10th - 12th
+            Techno-Management Fest-Innovación <span>2024</span> from 8th - 10th
             March, <span className="text-cyan-200">2024</span>
           </p>
         </div>

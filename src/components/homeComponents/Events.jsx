@@ -4,15 +4,6 @@ import { motion } from "framer-motion";
 const Events = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  const itemTransition = {
-    delay: 0.3, // Adjust delay between each item animation
-  };
-
   const animations = [
     {
       type: "continuousAppearDisappear",
@@ -113,12 +104,13 @@ const Events = () => {
   ];
 
   return (
-    <div className="bg-blue-500 bg-opacity-10 py-2 ">
-      <h3 className="my-4 mt-8 text-5xl italic font-bold text-center ">Events</h3>
+    <div className="bg-blue-500 bg-opacity-10 py-2">
+      <h3 className="my-4 mt-8 text-5xl italic font-bold text-center">
+        Events
+      </h3>
       <div className="w-20 h-1 mx-auto text-gray-100 bg-gray-100 rounded"></div>
-      <div className=" h-fit bg-opacity-10 z-[100]">
+      <div className="h-fit bg-opacity-10 z-[100]">
         <motion.div className="grid w-full grid-cols-1 gap-4 py-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {/* For each item */}
           {eventsItem.map((item, index) => (
             <motion.div
               key={index}
@@ -127,14 +119,14 @@ const Events = () => {
               variants={animations[index % animations.length].variant}
               whileHover={{
                 scale: hoveredIndex === index ? 1.5 : 0.5,
-                zIndex: hoveredIndex === index ? 8 : 0,
+                zIndex: hoveredIndex === index ? 6 : 0,
               }}
               whileTap={{
                 scale: hoveredIndex === index ? 0.8 : 1,
               }}
               className={`flex flex-row w-full justify-center sm:flex-row-reverse mx-auto cursor-pointer lg:w-1/3 md:w-1/2 sm:w-full ${
                 hoveredIndex !== null && hoveredIndex !== index
-                  ? "opacity-50"
+                  ? "opacity-80"
                   : ""
               }`}
               onMouseEnter={() => setHoveredIndex(index)}
@@ -142,7 +134,7 @@ const Events = () => {
             >
               <img
                 src={item.imgUrl}
-                alt="img.png"
+                alt={item.name}
                 className={`h-30 w-44 transition-transform ${
                   hoveredIndex === index ? "scale-125" : ""
                 }`}

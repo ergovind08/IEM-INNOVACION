@@ -1,6 +1,6 @@
 @keyframes borderMovement {
     0% {
-      transform: translateY(0);
+      transform: translateY(20px);
     }
     50% {
       transform: translateY(-20px); /* Adjust the value as needed */
