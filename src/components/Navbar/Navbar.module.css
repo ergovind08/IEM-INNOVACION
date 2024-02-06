@@ -47,11 +47,11 @@
 }
 
 .logo {
-  width: 30%;
+  width: 40%;
   opacity:0.6;
-  box-shadow: -5px 11px gray;
-  border-radius:10px;
-}
+  /* box-shadow: -5px 11px gray; */
+  /* border-radius:10px; */
+} 
 
 .hamburger {
   display: none;
