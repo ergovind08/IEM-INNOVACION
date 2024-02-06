@@ -25,7 +25,7 @@ const AboutTheEvent = () => {
     >
       <TypewriterAnimation />
       <div>
-        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 sm:w-1/2 border-y-4 rounded">
+        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
           <p className="brightness-100 font-extrabold mx-auto ">
             Institute of Engineering & Management, Kolkata in association with
             University of Engineering & Management is organising its Annual

@@ -11,6 +11,7 @@ import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 // import Login from "./components/registeration/Login";
+import MainEvents from "./components/MainEvents/MainEvents";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/events" element={<Event />} />
+          <Route path="/events" element={<MainEvents />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/schedule" element={<Schedule />} />

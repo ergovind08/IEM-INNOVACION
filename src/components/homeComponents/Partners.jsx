@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import { m_images, m_partner_img } from "../../assets/partner";
-// import "./Partner.css";
+import "./Partner.css";
 import { motion } from "framer-motion";
 
 const Partners = () => {
