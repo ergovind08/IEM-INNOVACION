@@ -103,7 +103,7 @@ export function Cards() {
                 whileTap={{ scale: 0.95 }}
                 style={{ color: "white" }}
               >
-                Register
+               <a href="https://forms.gle/GtswDucZwmD81DqcA">Register</a> 
               </motion.Button>
             </CardFooter>
           </motion.div>
