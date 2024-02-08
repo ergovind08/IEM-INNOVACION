@@ -19,8 +19,7 @@ import { motion } from "framer-motion";
 
 const Card = () => {
   return (
-    <div className="fixed top-20 bottom-0 left-0 right-0 w-screen h-full overflow-auto">
-    <AboutTheEvent />
+    
     <>
       <div className="flex justify-center items-center h-screen">
         <div className="flex w-5xl h-[600px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
