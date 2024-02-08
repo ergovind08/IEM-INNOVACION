@@ -13,10 +13,12 @@ const Hero = () => {
         className={`${classes.hero} justify-center w-full h-full -z-30`}
       >
         <div className={`${classes.herobox}`}>
-          <Innovacion className="w-screen z-200  my-[200px] " />
+          <Innovacion className=" absolute w-screen z-200  my-[300px] " />
           <div className={classes.headerbox}>
-            <h1 className={`${classes.heading} `}>Innovacion</h1>
-            <p className={classes.date}>March 8-10, 2024</p>
+            <h1 className={`${classes.heading} `}>Innovaciòn</h1>
+            <p className={classes.date} style={{ fontFamily: "montserrat" }}>
+              March 8-10, 2024
+            </p>
             <Link
               className={classes.anchorBtn}
               rel="noopener noreferrer"
@@ -26,6 +28,7 @@ const Hero = () => {
                 link="/events"
                 label="Explore Our Events"
                 className={classes.btn}
+                style={{ marginTop: "200px" }}
               ></Button>
             </Link>
           </div>

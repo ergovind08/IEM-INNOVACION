@@ -17,7 +17,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="relative w-screen h-screen">
-        <Navbar className="container relative text-white w-screen h-screen" />
+        <Navbar
+          className="container  relative text-white w-screen h-screen"
+          style={{ fontFamily: "montserrat" }}
+        />
         <Universe />
 
         <Routes>

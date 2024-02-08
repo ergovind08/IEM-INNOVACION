@@ -60,7 +60,11 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/">
+                <Link
+                  className={classes.homeLink}
+                  style={{ fontFamily: "montserrat" }}
+                  to="/"
+                >
                   Home
                 </Link>
               </Drop>
@@ -75,7 +79,11 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/about">
+                <Link
+                  className={classes.homeLink}
+                  style={{ fontFamily: "montserrat" }}
+                  to="/about"
+                >
                   About
                 </Link>
               </Drop>
@@ -90,7 +98,11 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/schedule">
+                <Link
+                  className={classes.homeLink}
+                  style={{ fontFamily: "montserrat" }}
+                  to="/schedule"
+                >
                   Schedule
                 </Link>
               </Drop>
@@ -103,7 +115,7 @@ const Navbar = () => {
               >
                 {/* {drop ? <Dropdown click={() => setDrop(!drop)} /> : ""} */}
                 Events
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   size="sm"
                   style={{
                     display: "inline-block",
@@ -112,7 +124,7 @@ const Navbar = () => {
                   }}
                   icon={faArrowDown}
                   fade
-                />
+                /> */}
               </li>
             </Link>
             <li className={classes.navLink}>
@@ -125,7 +137,11 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/team">
+                <Link
+                  className={classes.homeLink}
+                  style={{ fontFamily: "montserrat" }}
+                  to="/team"
+                >
                   Team
                 </Link>
                 {/* <FontAwesomeIcon
@@ -150,7 +166,11 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/contact">
+                <Link
+                  className={classes.homeLink}
+                  style={{ fontFamily: "montserrat" }}
+                  to="/contact"
+                >
                   Contact
                 </Link>
               </Drop>
@@ -180,6 +200,13 @@ const Navbar = () => {
             )}
           </div>
         </div>
+        <Link to="/">
+          <img
+            src={Iemlogo}
+            alt="/"
+            className={`${classes.logo} flex ml-20 flex-end w-[100px]`}
+          />
+        </Link>
 
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
           <a target="_blank" rel="noopener noreferrer" href="">

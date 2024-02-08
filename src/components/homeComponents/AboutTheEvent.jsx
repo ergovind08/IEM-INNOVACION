@@ -24,9 +24,9 @@ const AboutTheEvent = () => {
       className="p-5"
     >
       <TypewriterAnimation />
-      <div>
+      <div style={{ fontFamily: "montserrat" }}>
         <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
-          <p className="brightness-100 font-extrabold mx-auto ">
+          <p className="brightness-100 font-bold text-lg mx-auto ">
             Institute of Engineering & Management, Kolkata in association with
             University of Engineering & Management is organising its Annual
             Techno-Management Fest-Innovación <span>2024</span> from 8th - 10th

@@ -9,9 +9,10 @@
   transition: all 0.4s ease-in-out;
   background-color: black;
   top: 2%;
-  padding-top:16px;
-  border:1;
+  padding-top:2px;
+  border:5;
   border-color:white;
+  font-family: "Montserrat";
   
 }
 
@@ -92,7 +93,7 @@
   bottom: 1px;
   top:2px;
   left: 0;
-  background-image: linear-gradient(to bottom right, #f9fc5a, #0e6125);
+  background-image: linear-gradient(to bottom right, #e63f3f, #fff);
 
   transform-origin: bottom right;
   transition: transform 0.85s ease-in-out;

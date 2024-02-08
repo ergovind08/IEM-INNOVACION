@@ -37,11 +37,11 @@
 }
 
 .heading {
-  font-family: myFirstFont;
+  font-family: "montserrat";
   font-size: 12rem;
   font-weight: bolder;
   display: inline-block;
-  background-image: linear-gradient(to bottom, #f6f8f7,#0e407c, #f7ecf0 , #ea1362);
+  background-image: linear-gradient(to bottom, #e8eef4,  #e8eef4 , #ea1362 ,#ea1362 );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
