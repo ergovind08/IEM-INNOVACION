@@ -23,7 +23,7 @@ export function Cards() {
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.2 }}
       >
@@ -45,7 +45,7 @@ export function Cards() {
           >
             <CardHeader color="blue-gray" className="relative  m-3 h-56">
               <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                src="https://hackster.imgix.net/uploads/attachments/1204532/line_follower_robot_using_arduino_uno_and_ir_sensor1_3r2sU2hay2.jpg"
                 alt="card-image"
               />
             </CardHeader>
@@ -60,14 +60,17 @@ export function Cards() {
               color="blue-gray"
               className="text-center text-white mb-2"
             >
-              UI/UX Review Check
+              Tracker
             </Typography>
             {!showContent && (
               <CardBody>
                 <Typography className="text-cyan-300 text-lg font-bold">
-                  The place is close to Barceloneta Beach and bus stop just 2
-                  min by walk and near to &quot;Naviglio&quot; where you can
-                  enjoy the main night life in Barcelona.
+                Enter the thrilling realm where robots equipped with remarkable line-following
+                abilities converge to vie for the ultimate prize. Only
+                the most adept and strategically programmed robots will navigate the twists and
+                turns of the arena with unfaltering accuracy, aiming to emerge triumphant. Join us for
+                an electrifying competition where innovation meets precision, and where the quest
+                for victory pushes the boundaries of technological prowess.
                 </Typography>
               </CardBody>
             )}
