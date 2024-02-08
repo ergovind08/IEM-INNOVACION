@@ -1,6 +1,5 @@
-// import React from "react";
-import "react-slideshow-image/dist/styles.css";
-import "react-slideshow-image/dist/styles.css";
+import React from "react";
+import "./Media.css"; // Assuming this is the correct path for the styles
 
 const images = [
   {
@@ -22,25 +21,24 @@ const images = [
 
 const Media = () => {
   return (
-    <div className="w-full  ">
+    <div className="w-full">
       <h2 className="w-full my-4 text-5xl italic font-bold text-center">
-        MEDIA
+        Collaborators
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
-      <div className="flex ">
+      <div className="flex overflow-hidden ">
         {images.map((image, index) => (
-          <marquee
-            className="w-full shadow-cyan-300/10 shadow-cyan-300*10  shadow-xl"
-            direction="right"
-            scrollamount="10"
+          <div
+            key={index}
+            className="overflow-hidden shadow-cyan-300/10 shadow-cyan-300*10 shadow-xl"
+            style={{ width: "30vw" }}
           >
             <img
-              key={index}
               src={image.url}
               alt=""
-              className="object-contain shadow-2xl  p-2 mx-2 w-60 h-60"
+              className="object-contain p-2 mx-2 w-[250px] l h-60"
             />
-          </marquee>
+          </div>
         ))}
       </div>
     </div>

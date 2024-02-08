@@ -10,6 +10,8 @@ import Media from "./Media";
 // import Innovacion from "./Innovacion/Innovacion";
 import Hero from "../Hero/Hero";
 import Navbar from "../navbarComponents/Navbar";
+// import Collaborator from "./collaborators/Collaborator";
+import TeamDetail from "../teamdetail/teamdetail";
 
 const Home = () => {
   return (
@@ -19,9 +21,11 @@ const Home = () => {
       <AboutTheEvent />
       <CountDown />
       <Events />
-      {/* <Registeration /> */}
+
       <Media />
       <Partners />
+      {/* <Collaborator /> */}
+      {/* <TeamDetail /> */}
       <Footer />
     </div>
   );

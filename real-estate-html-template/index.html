@@ -1,0 +1,33 @@
+import React from "react";
+
+const TeamDetail = () => {
+  return (
+    <div className="container-xxl py-5">
+      <div className="container">
+        <div className="text-center mx-auto mb-5 animate__animated animate__fadeInUp" style={{ maxWidth: '600px' }}>
+          <h1 className="mb-3 text-3xl font-bold">Property Agents</h1>
+          <p className="text-lg">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+        </div>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="col-span-1 animate__animated animate__fadeInUp" style={{ animationDelay: '0.1s' }}>
+            <div className="rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="img/team-1.jpg" alt="Team Member" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Full Name</div>
+                <p className="text-gray-700 text-base">Designation</p>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <a href="#" className="btn btn-square mx-1"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" className="btn btn-square mx-1"><i className="fab fa-twitter"></i></a>
+                <a href="#" className="btn btn-square mx-1"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          {/* Repeat similar structure for other team members */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TeamDetail;

@@ -90,7 +90,7 @@ const Navbar = () => {
                 duration={600}
                 style={{ color: "white", textDecoration: "none" }}
               >
-                <Link className={classes.homeLink} to="/about">
+                <Link className={classes.homeLink} to="/schedule">
                   Schedule
                 </Link>
               </Drop>
@@ -182,11 +182,7 @@ const Navbar = () => {
         </div>
 
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="">
             <button className={classes.btn1}>GrabBit</button>
             <div className={classes.btn1}>
               <GrabBitBtn label="GrabBit" />
