@@ -7,7 +7,7 @@ import Registeration from "./Registeration";
 import Footer from "../footer/Footer";
 import Partners from "./Partners";
 import Media from "./Media";
-import News from "./news";
+import News from "./NewsComponent/News";
 // import Innovacion from "./Innovacion/Innovacion";
 import Hero from "../Hero/Hero";
 import Navbar from "../navbarComponents/Navbar";
