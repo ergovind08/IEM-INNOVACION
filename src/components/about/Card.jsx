@@ -16,27 +16,20 @@ const Card = () => {
           <div className="flex flex-col justify-center w-full p-8">
             <div className="bg-gradient-to-r from-slate-700 to-slate-500 rounded-t-md md:rounded-l-md p-4">
               <h3 className="inline-flex font-Consolas items-center text-3xl font-semibold text-white">
-                Event{/* Event <ArrowUpRight className="ml-2 h-8 w-8" /> */}
+                TRACKER(Line Tracing Robot) {/* Event <ArrowUpRight className="ml-2 h-8 w-8" /> */}
               </h3>
             </div>
             <div className="mt-4 text-lg font-Consolas text-gray-400 overflow-auto max-w-[700px]">
               <h4 className="font-Consolas text-rigth ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+               Enter the thrilling realm where robots equipped with remarkable line-following
+abilities converge to vie for the ultimate prize. In the high-stakes arena of the tracker,
+the discipline and precision of your automatons will undergo rigorous testing. Only
+the most adept and strategically programmed robots will navigate the twists and
+turns of the arena with unfaltering accuracy, aiming to emerge triumphant. Join us for
+an electrifying competition where innovation meets precision, and where the quest
+for victory pushes the boundaries of technological prowess.
               </h4>
+              <br> </br>
             </div>
             <div className="mt-4">
               <button className="inline-block px-3 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 rounded-full hover:from-blue-500 hover:to-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
