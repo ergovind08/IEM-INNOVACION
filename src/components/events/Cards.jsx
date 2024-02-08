@@ -98,7 +98,7 @@ export function Cards() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="bg-lime-900 rounded-2xl ml-4 w-[100px] h-[50px] align-top"
+                className="bg-lime-900 rounded-2xl ml-4 w-[90 px] h-[40px] align-top"
                 whileHover={{ scaleX: 0.99 }}
                 whileTap={{ scale: 0.95 }}
                 style={{ color: "white" }}
