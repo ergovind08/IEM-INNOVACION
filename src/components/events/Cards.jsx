@@ -9,7 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-export function Cards() {
+export function Cards({ content }) {
   const [showContent, setShowContent] = useState(true);
 
   const toggleContent = () => {
@@ -28,14 +28,7 @@ export function Cards() {
         transition={{ duration: 0.2 }}
       >
         <Card
-          className="
-          flex mb-[50px]
-          justify-center
-          mt-26
-          w-96
-          border-2
-          bg-transparent
-          "
+          className="flex mb-10 justify-center w-96 border-2 bg-transparent p-3"
           style={{ borderColor: "gray", backgroundColor: "transparent" }}
         >
           <motion.div
@@ -43,9 +36,13 @@ export function Cards() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <CardHeader color="blue-gray" className="relative  m-3 h-56">
+            <CardHeader color="blue-gray" className="relative m-3 h-56">
               <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                src={
+                  content.url
+                    ? content.url
+                    : "https://source.unsplash.com/random/800x600"
+                }
                 alt="card-image"
               />
             </CardHeader>
@@ -60,14 +57,12 @@ export function Cards() {
               color="blue-gray"
               className="text-center text-white mb-2"
             >
-              UI/UX Review Check
+              {content.texthead}
             </Typography>
             {!showContent && (
               <CardBody>
                 <Typography className="text-cyan-300 text-lg font-bold">
-                  The place is close to Barceloneta Beach and bus stop just 2
-                  min by walk and near to &quot;Naviglio&quot; where you can
-                  enjoy the main night life in Barcelona.
+                  {content.textContent}
                 </Typography>
               </CardBody>
             )}
@@ -82,7 +77,7 @@ export function Cards() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="w-[100px] bg-slate-800 rounded-xl h-[50px] align-top"
+                className="w-[100px] bg-slate-700 rounded-xl h-[50px] align-top"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.35 }}
                 onClick={toggleContent}
