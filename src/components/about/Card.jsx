@@ -1,8 +1,26 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import TypewriterAnimation from "./TextLoadingAnimation";
+import { motion } from "framer-motion";
+
+
+
+<div>
+        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
+          <p className="brightness-100 font-extrabold mx-auto ">
+            Institute of Engineering & Management, Kolkata in association with
+            University of Engineering & Management is organising its Annual
+            Techno-Management Fest-Innovación <span>2024</span> from 8th - 10th
+            March, <span className="text-cyan-200">2024</span>
+          </p>
+        </div>
+      </div>
+
 
 const Card = () => {
   return (
+    <div className="fixed top-20 bottom-0 left-0 right-0 w-screen h-full overflow-auto">
+    <AboutTheEvent />
     <>
       <div className="flex justify-center items-center h-screen">
         <div className="flex w-5xl h-[600px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
