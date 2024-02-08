@@ -12,12 +12,30 @@ import Hero from "../Hero/Hero";
 import Navbar from "../navbarComponents/Navbar";
 // import Collaborator from "./collaborators/Collaborator";
 import TeamDetail from "../teamdetail/teamdetail";
+import classes from "../Hero/Hero.module.css";
+import { Link } from "react-router-dom";
+import Button from "../common/Button/Button";
 
 const Home = () => {
   return (
     <div className="fixed top-20 bottom-0 left-0 right-0 w-screen h-full overflow-auto">
       {/* <Navbar /> */}
       <Hero />
+      <div className="container pb-0 pt-3">
+        <Link
+          className={`${classes.anchorBtn} justify-center`}
+          rel="noopener noreferrer"
+          to="/events"
+        >
+          <Button
+            link="/events"
+            label="Register Now"
+            className={classes.btn}
+            style={{ marginTop: "200px" }}
+          ></Button>
+        </Link>
+      </div>
+
       <AboutTheEvent />
       <CountDown />
       <Events />

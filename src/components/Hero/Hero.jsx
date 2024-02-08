@@ -10,27 +10,17 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={`${classes.hero} justify-center w-full h-full -z-30`}
+        className={`${classes.hero} justify-center mt-0 w-full h-full -z-30`}
       >
+        <Innovacion className=" absolute w-screen z-200  my-[300px] " />
         <div className={`${classes.herobox}`}>
-          <Innovacion className=" absolute w-screen z-200  my-[300px] " />
-          <div className={classes.headerbox}>
-            <h1 className={`${classes.heading} `}>Innovaciòn</h1>
+          <div className={classes.headerbox} style={{ marginTop: "-350px" }}>
+            <h1 className={`${classes.heading} text-extrabold  `}>
+              Innovaciòn
+            </h1>
             <p className={classes.date} style={{ fontFamily: "montserrat" }}>
               March 8-10, 2024
             </p>
-            <Link
-              className={classes.anchorBtn}
-              rel="noopener noreferrer"
-              to="/events"
-            >
-              <Button
-                link="/events"
-                label="Explore Our Events"
-                className={classes.btn}
-                style={{ marginTop: "200px" }}
-              ></Button>
-            </Link>
           </div>
         </div>
       </section>
