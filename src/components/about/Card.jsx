@@ -22,12 +22,12 @@ const Card = () => {
             <div className="mt-4 text-lg font-Consolas text-gray-400 overflow-auto max-w-[700px]">
               <h4 className="font-Consolas text-rigth ">
                Enter the thrilling realm where robots equipped with remarkable line-following
-abilities converge to vie for the ultimate prize. In the high-stakes arena of the tracker,
-the discipline and precision of your automatons will undergo rigorous testing. Only
-the most adept and strategically programmed robots will navigate the twists and
-turns of the arena with unfaltering accuracy, aiming to emerge triumphant. Join us for
-an electrifying competition where innovation meets precision, and where the quest
-for victory pushes the boundaries of technological prowess.
+              abilities converge to vie for the ultimate prize. In the high-stakes arena of the tracker,
+              the discipline and precision of your automatons will undergo rigorous testing. Only
+              the most adept and strategically programmed robots will navigate the twists and
+              turns of the arena with unfaltering accuracy, aiming to emerge triumphant. Join us for
+              an electrifying competition where innovation meets precision, and where the quest
+              for victory pushes the boundaries of technological prowess.
               </h4>
               <br> </br>
             </div>
@@ -44,26 +44,20 @@ for victory pushes the boundaries of technological prowess.
           <div className="flex flex-col justify-center w-full p-8">
             <div className="bg-gradient-to-r from-slate-700 to-slate-500 rounded-t-md md:rounded-l-md p-4">
               <h3 className="inline-flex font-Consolas items-center text-3xl font-semibold text-white">
-                Event{/* Event <ArrowUpRight className="ml-2 h-8 w-8" /> */}
+              Hell in a cell{/* Event <ArrowUpRight className="ml-2 h-8 w-8" /> */}
               </h3>
             </div>
             <div className="mt-4 text-lg font-Consolas text-gray-400 overflow-auto max-w-[700px]">
               <h4 className="font-Consolas text-left ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+              Prepare to be immersed in a whirlwind of chaos and excitement as technologically
+enhanced and weaponized robots engage in a relentless battle for supremacy within
+the treacherous confines of the Hell in a Cell arena. With unyielding determination
+and ruthless efficiency, these mechanized warriors unleash rampant destruction
+upon their adversaries, leaving no stone unturned in their quest for victory. Only the
+most formidable and strategically adept robots will emerge triumphant, as they
+ruthlessly decimate their opponents and seize the coveted prize. Brace yourself for
+an adrenaline-fueled spectacle where only the strongest survive and dominance
+knows no bounds!
               </h4>
             </div>
             <div className="mt-4">
