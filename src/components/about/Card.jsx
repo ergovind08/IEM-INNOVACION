@@ -12,6 +12,20 @@ import { motion } from "framer-motion";
             University of Engineering & Management is organising its Annual
             Techno-Management Fest-Innovación <span>2024</span> from 8th - 10th
             March, <span className="text-cyan-200">2024</span>
+            <b>Institute of Engineering & Management </b> has always been a class apart in putting up some of the most
+amazing techno management festivals in Kolkata region over the years.in it's current avatar as Innovación,
+having leveled up several notches, it has firmly established itself as one of the marquee tech fests in
+Eastern India over the last couple of years Innovación attracts a footfall of over <span className="text-cyan-200">10.000</span> every year with a
+reach of over 500 colleges and schools across the country The 2015 on wards editions also saw overseas
+participation from England, Brazil, France Taiwan and China amongst other countries.
+nnovación is an arena to exhibit creativity and latent talent of students in varied dimensions of technology
+and management Innovación caters to a wide variety of disciplines ranging from Robotics, Electronics,
+Coding and core fundamentals of Science and Mathematics. It is our endeavor to challenge participants to
+think Ideate innovate and push themselves to go that extra mile.
+Besides providing an international platform to the youth to showcase their talents and the opportunity to
+interact with some of the best minds in the business.
+Innovación also strives to give back to society through it's various social and environmental initiatives,
+inspiring young minds to strive to work towards solving the problems of the common populace
           </p>
         </div>
       </div>
