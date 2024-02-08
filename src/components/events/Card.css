@@ -1,0 +1,105 @@
+@keyframes rotateColors {
+    0% {
+      border-left-color: orange;
+      border-top-color: white;
+      border-right-color: blue;
+      border-bottom-color: green;
+    }
+    6.25% {
+      border-left-color: green;
+      border-top-color: orange;
+      border-right-color: white;
+      border-bottom-color: blue;
+    }
+    12.5% {
+      border-left-color: blue;
+      border-top-color: green;
+      border-right-color: orange;
+      border-bottom-color: white;
+    }
+    18.75% {
+      border-left-color: white;
+      border-top-color: blue;
+      border-right-color: green;
+      border-bottom-color: orange;
+    }
+    25% {
+      border-left-color: orange;
+      border-top-color: white;
+      border-right-color: blue;
+      border-bottom-color: green;
+    }
+    31.25% {
+      border-left-color: green;
+      border-top-color: orange;
+      border-right-color: white;
+      border-bottom-color: blue;
+    }
+    37.5% {
+      border-left-color: blue;
+      border-top-color: green;
+      border-right-color: orange;
+      border-bottom-color: white;
+    }
+    43.75% {
+      border-left-color: white;
+      border-top-color: blue;
+      border-right-color: green;
+      border-bottom-color: orange;
+    }
+    50% {
+      border-left-color: orange;
+      border-top-color: white;
+      border-right-color: blue;
+      border-bottom-color: green;
+    }
+    56.25% {
+      border-left-color: green;
+      border-top-color: orange;
+      border-right-color: white;
+      border-bottom-color: blue;
+    }
+    62.5% {
+      border-left-color: blue;
+      border-top-color: green;
+      border-right-color: orange;
+      border-bottom-color: white;
+    }
+    68.75% {
+      border-left-color: white;
+      border-top-color: blue;
+      border-right-color: green;
+      border-bottom-color: orange;
+    }
+    75% {
+      border-left-color: orange;
+      border-top-color: white;
+      border-right-color: blue;
+      border-bottom-color: green;
+    }
+    81.25% {
+      border-left-color: green;
+      border-top-color: orange;
+      border-right-color: white;
+      border-bottom-color: blue;
+    }
+    87.5% {
+      border-left-color: blue;
+      border-top-color: green;
+      border-right-color: orange;
+      border-bottom-color: white;
+    }
+    93.75% {
+      border-left-color: white;
+      border-top-color: blue;
+      border-right-color: green;
+      border-bottom-color: orange;
+    }
+    100% {
+      border-left-color: orange;
+      border-top-color: white;
+      border-right-color: blue;
+      border-bottom-color: green;
+    }
+  }
+  

@@ -21,6 +21,7 @@ export function Cards({ content }) {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
+      style={{ fontFamily: "montserrat" }}
     >
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -28,7 +29,7 @@ export function Cards({ content }) {
         transition={{ duration: 0.2 }}
       >
         <Card
-          className="flex mb-10 justify-center w-96 border-2 bg-transparent p-3"
+          className="flex mb-10 justify-center w-96 border-1 bg-transparent p-3"
           style={{ borderColor: "gray", backgroundColor: "transparent" }}
         >
           <motion.div
@@ -55,13 +56,14 @@ export function Cards({ content }) {
             <Typography
               variant="h5"
               color="blue-gray"
-              className="text-center text-white mb-2"
+              className="text-center text-2xl  text-white mb-3"
+              style={{ fontFamily: "montserrat" }}
             >
               {content.texthead}
             </Typography>
             {!showContent && (
               <CardBody>
-                <Typography className="text-cyan-300 text-lg font-bold">
+                <Typography className="text-lime-300 pb-3  text-[16px] font-bold">
                   {content.textContent}
                 </Typography>
               </CardBody>
@@ -77,7 +79,7 @@ export function Cards({ content }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="w-[100px] bg-slate-700 rounded-xl h-[50px] align-top"
+                className="w-[100px] bg-slate-800 rounded-xl h-[40px] align-top"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.35 }}
                 onClick={toggleContent}
@@ -90,7 +92,7 @@ export function Cards({ content }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="bg-lime-900 rounded-2xl ml-4 w-[100px] h-[50px] align-top"
+                className="bg-slate-800 rounded-2xl ml-4 w-[100px] h-[40px] align-top"
                 whileHover={{ scaleX: 0.99 }}
                 whileTap={{ scale: 0.95 }}
                 style={{ color: "white" }}

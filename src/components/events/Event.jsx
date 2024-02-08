@@ -2,6 +2,7 @@
 import Footer from "../footer/Footer";
 // import EventsDetails from "./EventsDetails";
 import { Cards } from "./Cards";
+// import img2 from "./cardimage/robopace.jpg";
 
 const content = [
   {
