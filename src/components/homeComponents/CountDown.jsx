@@ -57,10 +57,9 @@ const Countdown = () => {
       }}
     >
       <motion.h1
-        className="text-slate-600  text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container"
+        className="text-slate-600 text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container sm:-ml-[90px] "
         style={{
           fontFamily: "montserrat",
-          marginLeft: "-90px",
         }}
       >
         Commences <span className="p-3"></span>

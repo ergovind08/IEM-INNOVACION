@@ -25,7 +25,7 @@ const AboutTheEvent = () => {
     >
       <TypewriterAnimation />
       <div style={{ fontFamily: "montserrat" }}>
-        <div className="container bg-slate-900/20 border-fuchsia-500/20 p-3 w-1/2 border-y-4 rounded">
+        <div className="container bg-slate-900/20 border-fuchsia-500/20 p-3 sm:w-1/2 border-y-4 rounded">
           <p className="brightness-100 font-bold text-lg mx-auto ">
             <span className="text-red-500	">
               {" "}
