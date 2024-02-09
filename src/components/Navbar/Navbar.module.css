@@ -117,17 +117,17 @@
 .dropLink {
   width: 8.5rem;
   display: inline-block;
-  text-align: center;
-  align-items: center;
+  /* text-align: center; */
+  /* align-items: center; */
   text-decoration: none;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   cursor: pointer;
-  background-image: linear-gradient(to bottom right, #1c6e97, #25caeb);
+  color:white;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-weight: 400;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* color: transparent; */
+  font-weight: 600;
 }
 .dropLink:hover{
   font-size:larger;
