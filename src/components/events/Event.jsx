@@ -2,7 +2,15 @@
 import Footer from "../footer/Footer";
 // import EventsDetails from "./EventsDetails";
 import { Cards } from "./Cards";
-// import img2 from "./cardimage/robopace.jpg";
+import img2 from "./cardimage/robopace.jpg";
+import img4 from "./cardimage/innovare.jpg";
+import img8 from "./cardimage/mathmagic.jpg";
+import img9 from "./cardimage/iiiso.jpg";
+import img15 from "./cardimage/hackai.jpg";
+import img16 from "./cardimage/admania.jpg";
+import img19 from "./cardimage/bgmi.jpg";
+import img21 from "./cardimage/fifa.jpg";
+import img18 from "./cardimage/bullmaster.jpg";
 
 const content = [
   {
@@ -14,7 +22,7 @@ const content = [
   },
   {
     id: 2,
-    url: "",
+    url: img2,
     texthead: "Robopace",
     textContent:
       "With the X-Race setting the stage and Robofooties delivering the grand finale, the Ultimate Fusion event promises an unforgettable experience for spectators of all ages. Whether you're a robotics enthusiast, a sports fanatic, or simply looking for an exhilarating day out, this one-of-a-kind event has something for ever.",
@@ -28,7 +36,7 @@ const content = [
   },
   {
     id: 4,
-    url: "",
+    url: img4,
     texthead: "Innovare & Science Model Exhibition",
     textContent:
       "This exhibition provides a platform to put forth your out-of-the-  box ideas and gives a chance to demonstrate its prototype in  front of leading state industrialists who may just fund your  brilliant concepts. It provides you with an exposure towards  latest technologies and helps the engineering fraternity in the  better evolution of ideas.",
@@ -56,14 +64,14 @@ const content = [
   },
   {
     id: 8,
-    url: "",
+    url: img8,
     texthead: "Mathemagic",
     textContent:
       "This event is for those crazy about mathematics  and the patterns hidden in the cold, yet beautiful  landscape of mathematics. Participate in groups  of minimum 2 and maximum 3 people and stand  a chance to win exciting prizes.",
   },
   {
     id: 9,
-    url: "",
+    url: img9,
     texthead: "IIISO",
     textContent:
       "This event is focused on analytical, logical and critical thinking  skills in various fields of science, including Physics, Chemistry and  Biology. Compete only with the best and prove your mettle.",
@@ -105,14 +113,14 @@ const content = [
   },
   {
     id: 15,
-    url: "",
+    url: img15,
     texthead: "HACK-AI",
     textContent:
       "This will be a 48-Hour Virtual Hackathon, Technology: You will build applications with generative AI ✔️ Level: All levels are welcome  For whom?: Builders, creators & innovators!",
   },
   {
     id: 16,
-    url: "",
+    url: img16,
     texthead: "AD-Mania",
     textContent:
       "“Ad-Mad” aims to provide an opportunity to bring out individual and collective talent of the participant. By providing a platform to participants of maximum 4 members in a team to explore and present their creativity and to make participants aware about the essential concept of advertising and their execution.",
@@ -126,14 +134,14 @@ const content = [
   },
   {
     id: 18,
-    url: "",
+    url: img18,
     texthead: "The Bull Master",
     textContent:
       "Learn how the stock market works, understand the basics  of the stock market through experiential learning of  economic and financial concepts and stand a chance to  win exciting prizes, only at The Bull Master",
   },
   {
     id: 19,
-    url: "",
+    url: img19,
     texthead: "BGMI",
     textContent:
       "If your iconic characters in Battle Royale have left others  reeling, then we have the perfect competition in mind.  Innovación 2024 promises to be your Gunsmith and enhance  the weapons of your gaming skills. Bring in the unimaginably  superior grenade of your skills to win as you battle against the  best.",
@@ -147,7 +155,7 @@ const content = [
   },
   {
     id: 21,
-    url: "",
+    url: img21,
     texthead: "FIFA",
     textContent:
       "Entice your fifa skills and Player of the moth cards. If you llive,  breathe and sleep football, then we have the perfect  competition for you. Challenge contenders on all sorts of  platforms.",
