@@ -15,7 +15,8 @@ import TeamDetail from "../teamdetail/teamdetail";
 import classes from "../Hero/Hero.module.css";
 import { Link } from "react-router-dom";
 import Button from "../common/Button/Button";
-import News from "./MediaSlide/News";
+// import News from "./MediaSlide/News";
+import Slideimage from "./MediaSlide/Slideimage";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
       {/* <Partners /> */}
       {/* <Collaborator /> */}
       <TeamDetail />
+      <Slideimage />
       <Footer />
     </div>
   );
