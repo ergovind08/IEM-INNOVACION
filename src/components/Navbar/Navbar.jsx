@@ -48,7 +48,7 @@ const Navbar = () => {
               <img
                 src={Iemlogo}
                 alt="/"
-                className={`${classes.logo} -mb-[20px]`}
+                className={`${classes.logo} -mb-[20px] mt-0`}
               />
             </Link>
           </Drop>
@@ -210,7 +210,7 @@ const Navbar = () => {
           <img
             src={Uemlogo}
             alt="/"
-            className={`${classes.logo} flex ml-20 flex-end w-[120px] -mb-[20px]`}
+            className={`${classes.logo} flex ml-20 flex-end w-[120px] -mb-[20px] mt-0`}
           />
         </Link>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Media.css"; // Assuming this is the correct path for the styles
+import logo from "./ImageFolder/about.png";
 
 const images = [
   {
@@ -12,7 +13,7 @@ const images = [
     url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/8.png",
   },
   {
-    url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/icommunication.jpeg",
+    url: logo,
   },
   {
     url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/9.png",

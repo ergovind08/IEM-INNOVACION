@@ -44,7 +44,7 @@ const Home = () => {
       <Media />
       {/* <Partners /> */}
       {/* <Collaborator /> */}
-      {/* <TeamDetail /> */}
+      <TeamDetail />
       <Footer />
     </div>
   );
