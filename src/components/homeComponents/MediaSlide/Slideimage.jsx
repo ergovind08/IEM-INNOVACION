@@ -40,7 +40,7 @@ const Slideimage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       slideNext();
-    }, 30000); // Change slide every 3 seconds
+    }, 50000);
 
     return () => clearInterval(interval);
   }, [currentIndex, dataImages.length]);
@@ -72,7 +72,14 @@ const Slideimage = () => {
           {dataImages
             .slice(currentIndex, currentIndex + 4)
             .map((image, index) => (
-              <Card key={index} bg-black shadow-xl dataImage={image}>
+              <Card
+                key={index}
+                bg-black
+                border-2
+                border-white
+                shadow-xl
+                dataImage={image}
+              >
                 {/* <h1 slot="header"></h1> */}
                 {/* <p slot="content">Content text</p> */}
               </Card>

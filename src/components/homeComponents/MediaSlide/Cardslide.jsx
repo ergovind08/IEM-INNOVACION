@@ -36,6 +36,8 @@ const Card = ({ dataImage, children }) => {
       (mouseY / height) * -20
     }px )`,
     transitionDuration: "8s",
+    border: "5px solid black",
+    backgroundColor: "rgb(17 24 39)",
   };
 
   // const cardBgTransform = {
@@ -47,6 +49,7 @@ const Card = ({ dataImage, children }) => {
 
   const cardBgImage = {
     backgroundImage: `url(${dataImage})`,
+    border: "5px solid black", // Assign a value to border-color
   };
 
   return (
@@ -60,7 +63,7 @@ const Card = ({ dataImage, children }) => {
       <div className="card bg-bleck" style={cardStyle}>
         <div
           className="card-bg rounded-xl bg-black bg-transparent "
-          style={cardBgImage}
+          style={{ ...cardBgImage, transitionDuration: "5s" }}
         ></div>
         <div className="card-info">{children}</div>
       </div>
