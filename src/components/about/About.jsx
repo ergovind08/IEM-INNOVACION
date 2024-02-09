@@ -19,7 +19,10 @@ const About = () => {
   }
 
   return (
-    <div className="fixed top-0 mb-[100px] max-w-800 w-screen h-screen  overflow-auto">
+    <div
+      className="fixed top-0 mb-[100px] max-w-800 w-screen h-screen  overflow-auto"
+      style={{ fontFamily: "montserrat" }}
+    >
       <AboutSlider />
       <Name className="mt-[100px]" />
       <div className=" container grid lg::grid-cols-2 gap-4 sm:flex-row md:grid-cols-1 lg:grid-cols-1">

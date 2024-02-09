@@ -19,7 +19,10 @@ import News from "./MediaSlide/News";
 
 const Home = () => {
   return (
-    <div className="fixed top-20 bottom-0 left-0 right-0 w-screen h-full overflow-auto">
+    <div
+      className="fixed top-20 bottom-0 left-0 right-0 w-screen h-full overflow-auto"
+      style={{ fontFamily: "montserrat" }}
+    >
       {/* <Navbar /> */}
       <Hero />
       <div className="container pb-0 pt-3">

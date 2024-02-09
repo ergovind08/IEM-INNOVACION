@@ -11,6 +11,7 @@ const Hero = () => {
       <section
         id="home"
         className={`${classes.hero} justify-center mt-0 w-full h-full -z-30`}
+        style={{ fontFamily: "montserrat" }}
       >
         <Innovacion className=" absolute w-screen z-200  my-[300px] " />
         <div className={`${classes.herobox}`}>
