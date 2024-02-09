@@ -41,7 +41,7 @@ const Home = () => {
       <Events />
 
       <Media />
-      <Partners />
+      {/* <Partners /> */}
       {/* <Collaborator /> */}
       {/* <TeamDetail /> */}
       <Footer />

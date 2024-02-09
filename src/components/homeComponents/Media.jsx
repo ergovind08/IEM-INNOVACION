@@ -21,8 +21,8 @@ const images = [
 
 const Media = () => {
   return (
-    <div className="w-full">
-      <h2 className="w-full my-4 text-5xl italic font-bold text-center">
+    <div className="w-full" style={{ fontFamily: "montserrat" }}>
+      <h2 className="w-full my-7 text-5xl italic font-bold text-center">
         Collaborators
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>

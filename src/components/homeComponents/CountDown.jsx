@@ -9,7 +9,7 @@ const AnimatedBorder = ({ children }) => {
         className="px-4 py-3 sm:py-7 bg-slate-950 border-2 rounded-full"
         initial={{ borderColor: "#000" }}
         animate={{
-          borderColor: ["#f00", "#0f0", "#00f", "#f00", "#04f"], // You can add more colors here for variation
+          borderColor: ["#f00", "#0f0", "#00f", "#f00", "#04f"],
           transition: {
             duration: 10,
             repeat: Infinity,
@@ -25,7 +25,7 @@ const AnimatedBorder = ({ children }) => {
 };
 
 const Countdown = () => {
-  const targetDate = new Date("2024-03-31T23:59:59").getTime(); // Set your target date and time
+  const targetDate = new Date("2024-03-08T23:59:59").getTime();
   const [timeRemaining, setTimeRemaining] = useState(
     getTimeRemaining(targetDate)
   );
@@ -37,14 +37,11 @@ const Countdown = () => {
       const updatedTime = getTimeRemaining(targetDate);
       setTimeRemaining(updatedTime);
 
-      // If the countdown is complete, you can stop the interval or perform a specific action
       if (updatedTime.total <= 0) {
         clearInterval(interval);
-        // Perform any action you want when the countdown is complete
       }
     }, 1000);
 
-    // Animate the countdown using Framer Motion
     controls.start({ scale: 1.2, transition: { duration: 1 } });
 
     return () => {
@@ -53,14 +50,26 @@ const Countdown = () => {
   }, [targetDate, controls]);
 
   return (
-    <div className="flex sm:flex-row flex-col relative ">
+    <div
+      className="flex sm:flex-row flex-col relative "
+      style={{
+        fontFamily: "montserrat",
+      }}
+    >
+      <motion.h1
+        className="text-slate-600  text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container"
+        style={{
+          fontFamily: "montserrat",
+          marginLeft: "-90px",
+        }}
+      >
+        Commences <span className="p-3"></span>
+        <span style={{ opacity: 0.5 }}> in</span>
+      </motion.h1>
       <iframe
-        className="iframe-background"
+        className="iframe-background "
         src="https://lottie.host/embed/2cd47093-3563-43f8-bee0-f846dbeaa7ee/50VNWGIBAl.json"
       ></iframe>
-      <motion.h1 className="text-slate-600 text-bold sm:text-center tex-bold-900 decoration-sky-500/30 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container">
-        Commences<span style={{ opacity: 0.5 }}> In</span>
-      </motion.h1>
 
       <motion.div
         animate={controls}

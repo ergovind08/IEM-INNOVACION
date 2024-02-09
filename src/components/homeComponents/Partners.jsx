@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const Partners = () => {
   return (
-    <div className="w-full p-2 py-4 bg-[rgb(17,17,17)] bg-opacity-50">
+    <div
+      style={{ fontFamily: "montserrat" }}
+      className="w-full p-2 py-4 bg-[rgb(17,17,17)] bg-opacity-50"
+    >
       <h1 className="w-full my-4 text-5xl italic font-bold text-center">
         PARTNERS
       </h1>

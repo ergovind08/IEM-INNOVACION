@@ -25,12 +25,19 @@ const AboutTheEvent = () => {
     >
       <TypewriterAnimation />
       <div style={{ fontFamily: "montserrat" }}>
-        <div className="container bg-slate-900/20 border-fuchsia-500/30 p-3 w-1/2 border-y-4 rounded">
+        <div className="container bg-slate-900/20 border-fuchsia-500/20 p-3 w-1/2 border-y-4 rounded">
           <p className="brightness-100 font-bold text-lg mx-auto ">
-            Institute of Engineering & Management, Kolkata in association with
-            University of Engineering & Management is organising its Annual
-            Techno-Management Fest-Innovación <span>2024</span> from 8th - 10th
-            March, <span className="text-cyan-200">2024</span>
+            <span className="text-red-500	">
+              {" "}
+              Institute of Engineering & Management
+            </span>
+            , Kolkata in association with{" "}
+            <span className="text-yellow-300	">
+              University of Engineering & Management
+            </span>{" "}
+            is organising its AnnualTechno-Management Fest-{" "}
+            <span className="text-cyan-700">Innovación</span> <span>2024</span>{" "}
+            from 8th - 10th March, <span className="text-cyan-200">2024</span>
           </p>
         </div>
       </div>
@@ -39,7 +46,7 @@ const AboutTheEvent = () => {
         {EventsCardContent.map((item, index) => {
           return (
             <EventCard
-              className="text-cyan-200 rounded-xl"
+              className="text-cyan-800 rounded-xl"
               key={index}
               item={item}
               delay={index}

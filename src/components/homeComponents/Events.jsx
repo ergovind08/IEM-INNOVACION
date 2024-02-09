@@ -15,7 +15,7 @@ const Events = () => {
     {
       type: "rotate",
       variant: {
-        hidden: { rotateY: 0 },
+        hidden: { rotateY: 0, loop: Infinity },
         visible: {
           rotateY: 360,
           transition: { loop: Infinity, duration: 2, ease: "linear" },
@@ -104,8 +104,11 @@ const Events = () => {
   ];
 
   return (
-    <div className="bg-blue-500 bg-opacity-10 py-2">
-      <h3 className="my-4 mt-8 text-5xl italic font-bold text-center">
+    <div
+      className="bg-blue-500 bg-opacity-10 py-2"
+      style={{ fontFamily: "montserrat" }}
+    >
+      <h3 className="my-4 mt-8 text-7xl italic font-bold text-center">
         Events
       </h3>
       <div className="w-20 h-1 mx-auto text-gray-100 bg-gray-100 rounded"></div>
@@ -118,7 +121,7 @@ const Events = () => {
               animate="visible"
               variants={animations[index % animations.length].variant}
               whileHover={{
-                scale: hoveredIndex === index ? 1.5 : 0.5,
+                scale: hoveredIndex === index ? 1.2 : 0.5,
                 zIndex: hoveredIndex === index ? 6 : 0,
               }}
               whileTap={{
