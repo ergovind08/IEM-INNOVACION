@@ -1,8 +1,5 @@
 import './Partner.css'
-import GDSC from '../../assets/partners/gdsc.png'
-import IEMLabs from '../../assets/partners/iemlabs.png'
-import S4DS from '../../assets/partners/sds.png'
-import SPS from '../../assets/partners/sps.png'
+import { m_images, m_partner_img } from "../../assets/partner";
 import React from 'react'
 
 export default function Partners() {
@@ -14,22 +11,22 @@ export default function Partners() {
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src={IEMLabs} alt="IEM Labs" class="img-fluid"/>
+              <img src={m_images} alt="IEM Labs" class="img-fluid"/>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src={GDSC} alt="GDSC IEM" class="img-fluid"/>
+              <img src={m_partner_img} alt="GDSC IEM" class="img-fluid"/>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src={S4DS} alt="Society For Data Science" class="img-fluid"/>
+              <img src={m_partner_img} alt="Society For Data Science" class="img-fluid"/>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
-              <img src={SPS} alt="SPS" class="img-fluid"/>
+              <img src={m_images} alt="SPS" class="img-fluid"/>
             </div>
           </div>
           </div>
