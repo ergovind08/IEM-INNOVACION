@@ -40,7 +40,7 @@ const Slideimage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       slideNext();
-    }, 8000); // Change slide every 3 seconds
+    }, 30000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [currentIndex, dataImages.length]);
@@ -68,13 +68,13 @@ const Slideimage = () => {
         className="container text-black flex-col"
         style={{ fontFamily: "montserrat" }}
       >
-        <div id="app" className="container -mt-4">
+        <div id="app" className="container   -mt-4">
           {dataImages
             .slice(currentIndex, currentIndex + 4)
             .map((image, index) => (
-              <Card key={index} dataImage={image}>
-                <h1 slot="header" className="text-slate-800"></h1>
-                <p slot="content">{/* Content text */}</p>
+              <Card key={index} bg-black shadow-xl dataImage={image}>
+                {/* <h1 slot="header"></h1> */}
+                {/* <p slot="content">Content text</p> */}
               </Card>
             ))}
         </div>
