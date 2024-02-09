@@ -15,6 +15,7 @@ import TeamDetail from "../teamdetail/teamdetail";
 import classes from "../Hero/Hero.module.css";
 import { Link } from "react-router-dom";
 import Button from "../common/Button/Button";
+import News from "./MediaSlide/News";
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
       <AboutTheEvent />
       <CountDown />
       <Events />
-
+      {/* <News /> */}
       <Media />
       {/* <Partners /> */}
       {/* <Collaborator /> */}

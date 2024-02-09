@@ -80,7 +80,7 @@ export function Cards({ content }) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="w-[100px] bg-slate-800 rounded-xl h-[40px] align-top"
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.004 }}
                 whileTap={{ scale: 0.35 }}
                 onClick={toggleContent}
                 style={{ backgroundColor: "", color: "white" }}

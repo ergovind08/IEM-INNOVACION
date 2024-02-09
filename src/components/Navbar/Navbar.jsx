@@ -14,6 +14,7 @@ import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/Logo.png";
 import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
 import Iemlogo from "../../assets/images.png";
+import Uemlogo from "../../assets/uem.png";
 
 // const Scroll = require("react-scroll");
 
@@ -31,6 +32,7 @@ const Navbar = () => {
   return (
     <header
       className={`${!scrolled ? classes.header : classes.scrolledHeader}`}
+      style={{ fontFamily: "montserrat" }}
     >
       <div className={classes.elements}>
         <div className={classes.logobox}>
@@ -43,7 +45,11 @@ const Navbar = () => {
             duration={600}
           >
             <Link to="/">
-              <img src={Iemlogo} alt="/" className={classes.logo} />
+              <img
+                src={Iemlogo}
+                alt="/"
+                className={`${classes.logo} -mb-[20px]`}
+              />
             </Link>
           </Drop>
         </div>
@@ -110,7 +116,7 @@ const Navbar = () => {
 
             <Link to="/events">
               <li
-                className={`${classes.dropLink}`}
+                className={`${classes.dropLink} mr-0 mb-0`}
                 // onClick={() => setDrop(!drop)}
               >
                 {/* {drop ? <Dropdown click={() => setDrop(!drop)} /> : ""} */}
@@ -202,9 +208,9 @@ const Navbar = () => {
         </div>
         <Link to="/">
           <img
-            src={Iemlogo}
+            src={Uemlogo}
             alt="/"
-            className={`${classes.logo} flex ml-20 flex-end w-[100px]`}
+            className={`${classes.logo} flex ml-20 flex-end w-[120px] -mb-[20px]`}
           />
         </Link>
 
