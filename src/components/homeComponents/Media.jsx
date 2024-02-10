@@ -22,8 +22,11 @@ const images = [
 
 const Media = () => {
   return (
-    <div className="w-full" style={{ fontFamily: "montserrat" }}>
-      <h2 className="w-full my-7 text-5xl italic font-bold text-center">
+    <div className="w-ful " style={{ fontFamily: "montserrat" }}>
+      <h2
+        className="w-full my-7 text-5xl  font-bold text-center"
+        style={{ fontFamily: "montserrat" }}
+      >
         Collaborators
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
@@ -31,13 +34,13 @@ const Media = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="overflow-hidden shadow-cyan-300/10 shadow-cyan-300*10 shadow-xl"
+            className="overflow-x-hidden  shadow-cyan-600 shadow-xl"
             style={{ width: "30vw" }}
           >
             <img
               src={image.url}
               alt=""
-              className="object-contain p-2 mx-2 w-[250px] l h-60"
+              className="object-contain p-2 mx-4 w-[250px] ml-6 h-60"
             />
           </div>
         ))}

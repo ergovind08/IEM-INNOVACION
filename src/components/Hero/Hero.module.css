@@ -39,21 +39,38 @@
 
 }
 
+/* @keyframes move3d {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
 .heading {
   font-family: "montserrat";
-  font-size: 13rem;
+  font-size: 12rem;
   font-weight: bolder;
   display: inline-block;
   background-image: linear-gradient(to bottom, #e8eef4,  #e8eef4 , #ea1362 ,#ea1362 );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity:1;
+  opacity:10;
   filter: grayscale(0%);
+  text-shadow: 12px 18px 9px rgba(255, 255, 255, 0.1);
   padding: 0;
+  transition: transform 0.5s ease; 
+  -ms-perspective-origin-x: 300;
+  
 
 
 }
+
 .logo {
   margin-bottom: 3.5rem;
 }
