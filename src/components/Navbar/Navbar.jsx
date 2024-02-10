@@ -15,6 +15,8 @@ import Logo from "../../assets/Logo.png";
 import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
 import Iemlogo from "../../assets/images.png";
 import Uemlogo from "../../assets/uem.png";
+import clickSound from "./echo.mp3";
+import hoverSound from "./hover1.wav";
 
 // const Scroll = require("react-scroll");
 
@@ -23,6 +25,15 @@ const Navbar = () => {
   const [scrolled, isScrolled] = useState(false);
   const [mobile, setMobile] = useState(false);
   // const [drop, setDrop] = useState(false);
+  const audioRef = React.useRef(null);
+  const hoverAudioRef = React.useRef(null);
+
+  const handleChange = () => {
+    audioRef.current.play();
+  };
+  const handleMouseEnter = () => {
+    hoverAudioRef.current.play(); // Play the hover sound when mouse enters
+  };
 
   window.onscroll = () => {
     isScrolled(window.pageYOffset === 0 ? false : true);
@@ -72,6 +83,8 @@ const Navbar = () => {
                   className={classes.homeLink}
                   style={{ fontFamily: "montserrat" }}
                   to="/"
+                  onClick={handleChange}
+                  onMouseEnter={handleMouseEnter}
                 >
                   Home
                 </Link>
@@ -91,6 +104,8 @@ const Navbar = () => {
                   className={classes.homeLink}
                   style={{ fontFamily: "montserrat" }}
                   to="/about"
+                  onClick={handleChange}
+                  onMouseEnter={handleMouseEnter}
                 >
                   About
                 </Link>
@@ -110,13 +125,19 @@ const Navbar = () => {
                   className={classes.homeLink}
                   style={{ fontFamily: "montserrat" }}
                   to="/schedule"
+                  onClick={handleChange}
+                  onMouseEnter={handleMouseEnter}
                 >
                   Schedule
                 </Link>
               </Drop>
             </li>
 
-            <Link to="/events">
+            <Link
+              to="/events"
+              onClick={handleChange}
+              onMouseEnter={handleMouseEnter}
+            >
               <li
                 className={`${classes.dropLink} mr-0 mb-0`}
                 // onClick={() => setDrop(!drop)}
@@ -149,19 +170,11 @@ const Navbar = () => {
                   className={classes.homeLink}
                   style={{ fontFamily: "montserrat" }}
                   to="/team"
+                  onClick={handleChange}
+                  onMouseEnter={handleMouseEnter}
                 >
                   Team
                 </Link>
-                {/* <FontAwesomeIcon
-                  size="sm"
-                  style={{
-                    display: "inline-block",
-                    marginLeft: ".3rem",
-                    color: "white",
-                  }}
-                  icon={faArrowDown}
-                  fade
-                /> */}
               </Drop>
             </li>
             <li className={classes.navLink}>
@@ -178,6 +191,8 @@ const Navbar = () => {
                   className={classes.homeLink}
                   style={{ fontFamily: "montserrat" }}
                   to="/contact"
+                  onClick={handleChange}
+                  onMouseEnter={handleMouseEnter}
                 >
                   Contact
                 </Link>
@@ -325,6 +340,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      {/* Audio element for the sound effect */}
+      <audio ref={audioRef} src={clickSound} />
+      <audio ref={hoverAudioRef} src={hoverSound} />
     </header>
   );
 };
