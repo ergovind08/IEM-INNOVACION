@@ -99,7 +99,3 @@ const Card = ({ item, index }) => {
 };
 
 export default Card;
-
-
-
-
