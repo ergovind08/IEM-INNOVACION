@@ -13,8 +13,8 @@ const Registeration = () => {
 
       <div className="w-32 h-1 mx-auto mt-3  text-gray-100 bg-gray-100 rounded"></div>
 
-      <div className="w-full h-fit my-8 px-4 bg-transparent bg-gray-700 bg-opacity-80 ">
-        <div className="flex flex-wrap items-center w-full gap-12">
+      <div className="w-fullflex items-center justify-center h-fit my-8 px-4 bg-transparent bg-gray-700 bg-opacity-80 ">
+        <div className="flex flex-col flex-wrap items-center justify-center w-full gap-12">
           {reg_data.map((item, index) => (
             <Card key={index} item={item} index={index} />
           ))}

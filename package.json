@@ -24,6 +24,7 @@
     "@reduxjs/toolkit": "^1.9.7",
     "@syncfusion/ej2-react-buttons": "^24.2.3",
     "@syncfusion/ej2-react-navigations": "^24.2.4",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.3.2",
     "drei": "^2.2.21",
     "framer-motion": "^10.18.0",
