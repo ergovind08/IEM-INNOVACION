@@ -44,6 +44,7 @@ const Home = () => {
       <AboutTheEvent />
       <CountDown />
       <Events />
+      <Registeration />
       {/* <News /> */}
       <Media />
       {/* <Partners /> */}
