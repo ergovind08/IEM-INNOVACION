@@ -44,7 +44,7 @@ const Navbar = () => {
             offset={-100}
             duration={600}
           >
-            <Link to="/">
+            <Link to="/" >
               <img
                 src={Iemlogo}
                 alt="/"
@@ -54,6 +54,7 @@ const Navbar = () => {
           </Drop>
         </div>
 
+        {/* Desktop Menu */}
         <div className={classes.navbox}>
           <ul className={classes.nav}>
             <li className={classes.navLink}>
@@ -207,7 +208,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* uEM Logo */}
+        {/* UEM Logo */}
         <Link to="/">
           <img
             src={Uemlogo}
@@ -216,6 +217,7 @@ const Navbar = () => {
           />
         </Link>
 
+        {/* Mobile Menu */}
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
           <a target="_blank" rel="noopener noreferrer" href="">
             <button className={classes.btn1}>GrabBit</button>
