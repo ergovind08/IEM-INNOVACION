@@ -44,6 +44,7 @@ const Navbar = () => {
             offset={-100}
             duration={600}
           >
+            {/* IEM Logo */}
             <Link to="/" >
               <img
                 src={Iemlogo}
@@ -213,7 +214,7 @@ const Navbar = () => {
           <img
             src={Uemlogo}
             alt="/"
-            className={`${classes.logo} flex flex-end w-[80px] sm:w-[120px] sm:ml-14 mr-5 -mb-[20px] mt-0`}
+            className={`${classes.logo} flex flex-end w-[89px] sm:w-[100px] sm:ml-14 mr-5 -mb-[20px] mt-0`}
           />
         </Link>
 

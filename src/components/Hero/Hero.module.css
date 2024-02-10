@@ -10,7 +10,7 @@
   height: 100%;
   padding: 40px;
   margin: 0;
-  opacity:1;
+  opacity: 1;
   width: 100%;
 }
 
@@ -20,6 +20,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
     url("./Hero.svg");
   filter:grayscale(0%);
+  /* filter: opacity(20%); */
   
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +37,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 100%;
+  padding: 10px;
 }
 
 /* @keyframes move3d {
@@ -66,9 +68,11 @@
   padding: 0;
   transition: transform 0.5s ease; 
   -ms-perspective-origin-x: 300;
-  
-
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -100,6 +104,8 @@
   /* padding-bottom:22; */
   transform: translateY(-0.1rem);
   background-image: linear-gradient(to top left, #09b326, #32b4ed);
+  box-shadow: rgba(0, 0, 0, 0.74) 1.95px 1.95px 2.6px;
+
 }
 
 /* .btn:hover {
@@ -123,6 +129,8 @@
   font-weight: 700;
   /* margin-top: 2rem; */
   margin-bottom: 3rem;
+  margin-top: 4.5rem;
+  text-shadow: 3px 0px 7px rgba(0,0,0,1);
 }
 
 .countdownbox {
@@ -149,7 +157,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
   .herobox {
     justify-content: center;
   }
@@ -171,7 +179,7 @@
   }
 
   .heading {
-    font-size: 5rem;
+    font-size: 74px;
   }
 
   .btn {
@@ -194,5 +202,6 @@
 
   .date{
     font-size: 2rem;
+    margin-top: 16px;
   }
 }

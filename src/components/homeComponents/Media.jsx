@@ -30,17 +30,17 @@ const Media = () => {
         Collaborators
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
-      <div className="flex overflow-hidden ">
+      
+      <div className=" grid grid-cols-2 sm:flex overflow-auto sm:overflow-hidden w-full">
         {images.map((image, index) => (
           <div
             key={index}
-            className="overflow-x-hidden  shadow-cyan-600 shadow-xl"
-            style={{ width: "30vw" }}
+            className="overflow-auto sm:overflow-x-hidden sm:w-[30vw] sm:shadow-cyan-600 sm:shadow-xl"
           >
             <img
               src={image.url}
               alt=""
-              className="object-contain p-2 mx-4 w-[250px] ml-6 h-60"
+              className="object-contain p-2 mx-4 w-[160px] sm:w-[200px] ml-6 h-[7rem] sm:h-60"
             />
           </div>
         ))}
