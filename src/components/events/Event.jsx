@@ -12,6 +12,7 @@ import img19 from "./cardimage/bgmi.jpg";
 import img21 from "./cardimage/fifa.jpg";
 import img18 from "./cardimage/bullmaster.jpg";
 
+
 const content = [
   {
     id: 1,
@@ -164,18 +165,18 @@ const content = [
 
 const Event = () => {
   return (
-    <>
-    <div className=" text-white mt-[100px] sm:mt-[150px] ml-5 sm:ml-10 overflow-auto relative ">
-      <div className="flex flex-col pt-9 sm:flex-row flex-wrap w-full overflow-auto justify-center">
+    <div className="">
+    <div className=" text-white mt-[100px] sm:mt-[150px] sm:ml-12 overflow-auto relative flex items-center parent">
+      <div className="flex flex-col sm:flex-row flex-wrap overflow-auto pt-9 w-full ">
         {content.map((item) => (
-          <div className=" w-1/3 px-2 sm:px-8 rounded-2xl" key={item.id}>
+          <div className=" w-1/3 px-8 sm:px-8 rounded-2xl" key={item.id}>
             <Cards content={item} />
           </div>
         ))}
       </div>
     </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
