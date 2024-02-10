@@ -3,17 +3,14 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
-// Import your sound file
 import clickSound from "./click.wav";
 
 function VerticalTabs({ value, onChange }) {
-  // Create a reference to the audio element
   const audioRef = React.useRef(null);
 
   const handleChange = (event, newValue) => {
-    // Play the sound
     audioRef.current.play();
-    // Call the onChange function passed from parent component
+
     onChange(event, newValue);
   };
 
