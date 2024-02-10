@@ -5,6 +5,9 @@ import Name from "./Name";
 import Card from "./Card";
 import MediaCover from "./MediaCover";
 import VerticalTabs from "./VerticalTabs";
+import Card2 from "./Card2";
+import Card3 from "./Card3";
+import Card4 from "./Card4";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -14,7 +17,7 @@ const About = () => {
   };
 
   return (
-    <>
+    <div className="conatiner">
       <AboutSlider />
 
       <div
@@ -41,19 +44,25 @@ const About = () => {
             {activeTab === 0 && <Card className="ml-10  rounded-xl" />}{" "}
             {activeTab === 1 && (
               <div>
-                <Card />
+                <Card2 />
               </div>
             )}
             {activeTab === 2 && (
               <div>
-                <Card />
+                <Card3 />
+              </div>
+            )}
+            {activeTab === 3 && (
+              <div>
+                <Card4 />
               </div>
             )}
           </div>
         </div>
       </div>
+      <MediaCover />
       <Footer />
-    </>
+    </div>
   );
 };
 
