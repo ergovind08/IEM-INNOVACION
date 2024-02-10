@@ -42,6 +42,15 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+  .elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+}
+
 .logobox {
   display: flex;
   align-items: flex;
@@ -149,8 +158,7 @@
   transition: all 0.2s;
 }
 
-.btn:hover,
-.btn1:hover {
+.btn:hover, .btn1:hover {
   /* transform: translateY(-0.1rem);
   background-image: linear-gradient(to top left, #09b326, #32b4ed); */
 }
