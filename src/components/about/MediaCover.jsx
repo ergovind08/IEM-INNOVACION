@@ -32,18 +32,22 @@ function Gallery() {
 
   return (
     <>
-      <div className="  mt-[0px]">
-        <h1 className=" conatainer text-bold  text-6xl z-50 justify-center flex">
+      <div className=" container bg-transparent mt-[0px] mb-[50px] opacity-50">
+        <div className="w-80 h-1 mt-7 mx-auto mb-4 z-[200] text-gray-100 bg-cyan-100 rounded"></div>
+
+        <h1 className="container text-bold text-6xl z-5000 text-white justify-center flex">
           {" "}
           Media Coverage
         </h1>
-        <div className="w-80 h-1 mt-7 mx-auto mb-4 z-[100] text-gray-100 bg-cyna-200 rounded"></div>
+        <div className="w-80 h-1 mt-7 mx-auto mb-4 z-[200] text-gray-100 bg-cyan-100 rounded"></div>
       </div>
       <Grid
         container
-        className=" justify-between"
+        className="justify-between"
         spacing={3}
         justifyContent="center"
+        marginBottom={20}
+        background="transparent"
       >
         {images.map((image, index) => (
           <Grid item key={index}>
@@ -73,8 +77,8 @@ function Gallery() {
                 }}
               />
               <motion.div
-                className="absolute border-2 border-cyan-200 "
-                initial={{ opacity: 0 }}
+                className="absolute border-2 border-cyan-100 "
+                initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}
               />

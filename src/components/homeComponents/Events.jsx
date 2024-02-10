@@ -108,9 +108,7 @@ const Events = () => {
       className="bg-blue-500 bg-opacity-10 py-2"
       style={{ fontFamily: "montserrat" }}
     >
-      <h3 className="my-4 mt-8 text-7xl italic font-bold text-center">
-        Events
-      </h3>
+      <h3 className="my-3 mt-8 text-6xl  font-bold text-center">Events</h3>
       <div className="w-20 h-1 mx-auto text-gray-100 bg-gray-100 rounded"></div>
       <div className="h-fit bg-opacity-10 z-[100]">
         <motion.div className="grid w-full grid-cols-1 gap-4 py-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
