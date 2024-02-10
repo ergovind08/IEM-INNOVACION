@@ -297,9 +297,10 @@ section {
 
 }
 
-.parent{
+/* .parent{
   margin-left: auto;
-}
+} */
+
 @media only screen and (max-width: 600px) {
   .parent{
     width: 100vw;
@@ -308,9 +309,9 @@ section {
 }
 
 @media only screen and (max-width: 320px) {
-  .parent{
+  /* .parent{
     width: 320px;
-  }
+  } */
 }
 
 /*

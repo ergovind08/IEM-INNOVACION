@@ -29,7 +29,7 @@ export function Cards({ content }) {
         transition={{ duration: 0.2 }}
       >
         <Card
-          className="flex mb-10 justify-center w-[300px] h-full sm:w-96 border-1 bg-transparent p-3 "
+          className="flex mb-10 justify-center w-[100%] h-full sm:w-96 border-1 bg-transparent p-3 "
           style={{ borderColor: "gray", backgroundColor: "transparent" }}
         >
           <motion.div
