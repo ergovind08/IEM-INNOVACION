@@ -34,7 +34,14 @@ const Footer = () => {
               <h3 className=" text-[18px] sm:text-2xl font-bold w-full ">Quick links</h3>
               <div className="flex flex-col gap-3">
                 <FooterBtn item="Register Now" />
-                <FooterBtn item="Location" />
+                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="relative flex items-center justify-center py-1 overflow-hidden font-medium duration-500 bg-gray-500 rounded-md cursor-pointer hover:border-gray-600 group text-sky-50">
+            <div className="absolute z-10 w-48 h-48 transition-all duration-500 ease-in-out delay-150 btnG1 rounded-full group-hover:scale-150 group-hover:delay-75"></div>
+            <div className="absolute z-10 w-40 h-40 transition-all duration-500 ease-in-out delay-150 btnG2 rounded-full group-hover:scale-150 group-hover:delay-100"></div>
+            <div className="absolute z-10 w-32 h-32 transition-all duration-500 ease-in-out delay-150 btnG3 rounded-full group-hover:scale-150 group-hover:delay-150"></div>
+            <div className="absolute z-10 w-24 h-24 transition-all duration-500 ease-in-out delay-150 btnG4 rounded-full group-hover:scale-150 group-hover:delay-200"></div>
+            <div className="absolute z-10 w-16 h-16 transition-all duration-500 ease-in-out delay-150 btnG5 rounded-full group-hover:scale-150 group-hover:delay-300"></div>
+            <span className="z-10">Location</span>
+        </motion.button>
               </div>
            </div>
   
@@ -59,25 +66,25 @@ const Footer = () => {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  <FaFacebook className="text-[18px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
+                  <FaFacebook className="text-[28px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
                 </motion.span>
                 <motion.span
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  <FaInstagram className="text-[18px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
+                  <FaInstagram className="text-[28px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
                 </motion.span>
                 <motion.span
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  <FaYoutube className="text-[18px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
+                  <FaYoutube className="text-[28px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
                 </motion.span>
                 <motion.span
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                 >
-                  <BiLogoGmail className="text-[18px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
+                  <BiLogoGmail className="text-[28px] my-2 cursor-pointer text-gray-300 hover:text-gray-100" />
                 </motion.span>
               </div>
             </div>

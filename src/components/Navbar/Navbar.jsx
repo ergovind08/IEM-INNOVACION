@@ -235,12 +235,12 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
-          <a target="_blank" rel="noopener noreferrer" href="">
+          {/* <a target="_blank" rel="noopener noreferrer" href="">
             <button className={classes.btn1}>GrabBit</button>
             <div className={classes.btn1}>
               <GrabBitBtn label="GrabBit" />
             </div>
-          </a>
+          </a> */}
 
           {/* Mobile Page */}
 
