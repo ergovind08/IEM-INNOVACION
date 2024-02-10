@@ -1,34 +1,66 @@
+import React, { useState } from "react";
 import Footer from "../footer/Footer";
 import AboutSlider from "./AboutSlider";
-// import ChiefGuest from "./ChiefGuest";
-import "./About.css";
-// import ChiefGuestCard from "./ChiefGuestCard";
-// import Winners from "./Winners";
-
 import Name from "./Name";
 import Card from "./Card";
 import MediaCover from "./MediaCover";
+import VerticalTabs from "./VerticalTabs";
+import Card2 from "./Card2";
+import Card3 from "./Card3";
+import Card4 from "./Card4";
 
 const About = () => {
-  // Create an array to store the components
-  const cardComponents = [];
+  const [activeTab, setActiveTab] = useState(0);
 
-  // Populate the array with Card components
-  for (let i = 0; i < 2; i++) {
-    cardComponents.push(<Card key={i} />);
-  }
+  const handleTabChange = (event, newValue) => {
+    setActiveTab(newValue);
+  };
 
   return (
-    <div
-      className="fixed top-0 mb-[100px] max-w-800 w-screen h-screen  overflow-auto"
-      style={{ fontFamily: "montserrat" }}
-    >
+    <div className="conatiner">
       <AboutSlider />
-      <Name className="mt-[100px]" />
-      <div className=" container grid lg::grid-cols-2 gap-4 sm:flex-row md:grid-cols-1 lg:grid-cols-1">
-        {cardComponents}
+
+      <div
+        className="container w-[1200px] flex-col"
+        style={{ fontFamily: "montserrat" }}
+      >
+        <Name className=" text-white " style={{ fontFamily: "montserrat" }} />
+        <div>
+          <div
+            style={{
+              fontFamily: "montserrat",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              maxWidth: "auto",
+            }}
+          >
+            <VerticalTabs
+              className=" "
+              value={activeTab}
+              onChange={handleTabChange}
+            />
+            {activeTab === 0 && <Card className="ml-10  rounded-xl" />}{" "}
+            {activeTab === 1 && (
+              <div>
+                <Card2 />
+              </div>
+            )}
+            {activeTab === 2 && (
+              <div>
+                <Card3 />
+              </div>
+            )}
+            {activeTab === 3 && (
+              <div>
+                <Card4 />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
-      <MediaCover className="py-[70px] max-w-[900px] t-0" />
+      <MediaCover />
       <Footer />
     </div>
   );

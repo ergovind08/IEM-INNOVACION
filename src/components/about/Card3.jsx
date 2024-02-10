@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const Card = () => {
+const Card3 = () => {
   return (
     <>
       <div className="flex justify-center items-center h-screen">
@@ -16,7 +16,7 @@ const Card = () => {
           <div className="flex flex-col justify-center w-full p-8">
             <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-t-md md:rounded-l-md p-3">
               <h3 className="inline-flex font-Consolas items-center text-3xl font-semibold text-cyan-400	">
-                Innovación 2024
+                Innovación 2023
               </h3>
             </div>
             <div className="mt-4 text-lg  text-gray-100 overflow-auto max-w-[900px]">
@@ -51,4 +51,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card3;
