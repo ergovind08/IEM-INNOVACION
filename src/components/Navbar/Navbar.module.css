@@ -196,7 +196,7 @@
   padding: 2rem;
   font-size: 2.9rem;
   background-image: linear-gradient(to bottom right, #21569d, #ff0932);
-  -webkit-background-clip: text;
+  background-clip: text;
   /* -webkit-text-fill-color: transparent; */
   color: transparent;
   font-weight: 200;
@@ -265,4 +265,9 @@
     text-align: center;
     transition: all 0.8s;
   }
+
+  .logobox{
+    margin-right: 0px;
+  }
+
 }
