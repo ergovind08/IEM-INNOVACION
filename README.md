@@ -191,10 +191,13 @@ All Rights Reserved to Govind Jha
 <!-- CONTACT -->
 ## Contact
 
-Project Ownership - Govind Jha
-Project Contributor: Yash
-Project Responsiveness : Harsh
-Graphics Designer : Debangkita 
+<li>Project Ownership - Govind Jha</li>
+<li>Project Contributor: Yash</li>
+<li>Project Responsiveness : Harsh</li>
+<li>Graphics Designer : Debangkita </li>
+
+
+
 
 
 
