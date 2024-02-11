@@ -2,7 +2,7 @@
 
 ![Project Logo](https://example.com/logo.png)
 
-A brief description of your project here. Mention its purpose, key features, and any unique selling points.
+Innovación 2024 is a project aimed at revolutionizing [mention the domain or purpose of the project]. It incorporates cutting-edge technology and innovative solutions to address [mention the problem or need it solves]. 
 
 ## Table of Contents
 
@@ -13,15 +13,9 @@ A brief description of your project here. Mention its purpose, key features, and
 
 ## Installation
 
-Provide step-by-step instructions on how to install and set up your project. Include any dependencies that need to be installed and configuration steps if applicable. Use images/screenshots where necessary to illustrate each step.
+Follow these steps to get the project up and running on your local machine:
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/ergovind08/IEM-INNOVACION
-
-### Step 2: Install Dependencies
-
-```bash
-cd your-project
-npm install
+git clone https://github.com/ergovind08/IEM-INNOVACION.git
