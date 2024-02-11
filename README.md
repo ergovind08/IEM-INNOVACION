@@ -191,7 +191,12 @@ All Rights Reserved to Govind Jha
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Govind Jha
+Project Ownership - Govind Jha
+Project Contributor: Yash
+Project Responsiveness : Harsh
+Graphics Designer : Debangkita 
+
+
 
 LinkedIn Link: https://www.linkedin.com/in/govind-jha-9209481a4/
 
