@@ -55,7 +55,8 @@ const Navbar = () => {
             offset={-100}
             duration={600}
           >
-            <Link to="/">
+            {/* IEM Logo */}
+            <Link to="/" >
               <img
                 src={Iemlogo}
                 alt="/"
@@ -65,6 +66,7 @@ const Navbar = () => {
           </Drop>
         </div>
 
+        {/* Desktop Menu */}
         <div className={classes.navbox}>
           <ul className={classes.nav}>
             <li className={classes.navLink}>
@@ -217,25 +219,28 @@ const Navbar = () => {
                 size="3x"
               />
             ) : (
-              <FiMenu size={20} />
+              <FiMenu size={30} />
             )}
           </div>
         </div>
+
+        {/* UEM Logo */}
         <Link to="/">
           <img
             src={Uemlogo}
             alt="/"
-            className={`${classes.logo} flex ml-14 flex-end w-[90px] sm:w-[120px] mr-5 -mb-[20px] mt-0`}
+            className={`${classes.logo} flex flex-end w-[89px] sm:w-[100px] sm:ml-14 mr-5 -mb-[20px] mt-0`}
           />
         </Link>
 
+        {/* Mobile Menu */}
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
-          <a target="_blank" rel="noopener noreferrer" href="">
+          {/* <a target="_blank" rel="noopener noreferrer" href="">
             <button className={classes.btn1}>GrabBit</button>
             <div className={classes.btn1}>
               <GrabBitBtn label="GrabBit" />
             </div>
-          </a>
+          </a> */}
 
           {/* Mobile Page */}
 

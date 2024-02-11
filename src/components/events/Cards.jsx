@@ -29,7 +29,7 @@ export function Cards({ content }) {
         transition={{ duration: 0.2 }}
       >
         <Card
-          className="flex mb-10 justify-center w-[350px] h-full sm:w-96 border-1 bg-transparent p-3 "
+          className="flex mb-10 justify-center w-[100%] h-full sm:w-96 border-1 bg-transparent p-3 "
           style={{ borderColor: "gray", backgroundColor: "transparent" }}
         >
           <motion.div
@@ -56,7 +56,7 @@ export function Cards({ content }) {
             <Typography
               variant="h5"
               color="blue-gray"
-              className="text-center text-2xl  text-white mb-3"
+              className="text-center text-2xl text-white my-3"
               style={{ fontFamily: "montserrat" }}
             >
               {content.texthead}
