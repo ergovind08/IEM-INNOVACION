@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-
+import './Templates.css'
 const Card = ({ dataImage, children }) => {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);

@@ -97,3 +97,16 @@
     transition: opacity 0s var(--returnEasing);
     pointer-events: none;
 }
+@media only screen and (max-width: 600px) {
+    .container .card{
+        width: 155px;
+        height: 155px;
+        margin: 0;
+    }
+
+    .card-bg{
+        top: -5px;
+        left: -5px;
+    }
+
+  }
