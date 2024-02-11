@@ -19,3 +19,9 @@ Provide step-by-step instructions on how to install and set up your project. Inc
 
 ```bash
 git clone https://github.com/ergovind08/IEM-INNOVACION
+
+### Step 2: Install Dependencies
+
+```bash
+cd your-project
+npm install
