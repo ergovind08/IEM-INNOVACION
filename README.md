@@ -17,8 +17,6 @@ Follow these steps to get the project up and running on your local machine:
 
 ### Step 1: Clone the Repository
 
-```bash
-git clone https://github.com/ergovind08/IEM-INNOVACION.git
 
 Step 2: Navigate to the Project Directory
 Navigate into the cloned repository's directory using the cd command:
@@ -49,5 +47,9 @@ Contributing
 
 License
 [Specify the license under which the project is distributed. This could be something like MIT, Apache, GPL, etc. Include any additional terms or conditions as necessary.]
+
+```bash
+git clone https://github.com/ergovind08/IEM-INNOVACION.git
+
 
 
