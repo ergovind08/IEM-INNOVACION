@@ -44,7 +44,7 @@ const [textleft,setTextleft]=useState(0);
   };
   
   return (
-    <div className="container max-w-[1200px]  -pb-5">
+    <div className="container max-w-[1200px] -pb-5">
       {(index === 0 || index === 1 || index === 3 || index === 2) && (
         <motion.div className={`w-full flex overflow-hidden relative px-10 py-2 items-center justify-center ${index === 1 || index === 3 ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col flex-wrap md:gap-4  items-center`}
               initial={"offscreen"} whileInView={"onscreen"} viewport={{once:false}} transition={{staggerChildren:0.5}}>
