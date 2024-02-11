@@ -225,7 +225,7 @@ const Navbar = () => {
           <img
             src={Uemlogo}
             alt="/"
-            className={`${classes.logo} flex ml-20 flex-end w-[120px] -mb-[20px] mt-0`}
+            className={`${classes.logo} flex ml-14 flex-end w-[90px] sm:w-[120px] mr-5 -mb-[20px] mt-0`}
           />
         </Link>
 

@@ -164,16 +164,18 @@ const content = [
 
 const Event = () => {
   return (
-    <div className="mb-[200px]  pt-9 ml-10 text-white mt-[200px] overflow-auto">
-      <div className="flex flex-wrap justify-center">
+    <>
+    <div className=" text-white mt-[100px] sm:mt-[150px] ml-5 sm:ml-10 overflow-auto relative ">
+      <div className="flex flex-col pt-9 sm:flex-row flex-wrap w-full overflow-auto justify-center">
         {content.map((item) => (
-          <div className="w-1/3 px-8 rounded-2xl" key={item.id}>
+          <div className=" w-1/3 px-2 sm:px-8 rounded-2xl" key={item.id}>
             <Cards content={item} />
           </div>
         ))}
       </div>
-      <Footer />
     </div>
+      <Footer />
+    </>
   );
 };
 
