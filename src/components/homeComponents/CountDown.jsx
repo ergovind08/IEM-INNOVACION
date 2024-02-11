@@ -57,10 +57,9 @@ const Countdown = () => {
       }}
     >
       <motion.h1
-        className="text-slate-600  text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container"
+        className="text-slate-600 text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container sm:-ml-[90px] my-3 "
         style={{
           fontFamily: "montserrat",
-          marginLeft: "-90px",
         }}
       >
         Commences <span className="p-3"></span>
@@ -134,7 +133,7 @@ function getTimeRemaining(targetDate) {
 
 function App() {
   return (
-    <div className="w-full h-[300px] flex my-2 py-2 sm:ml-5 justify-center items-center bg-cover bg-no-repeat">
+    <div className="w-full h-[300px] flex my-10 py-2 sm:ml-5 justify-center items-center bg-cover bg-no-repeat">
       <Countdown />
     </div>
   );

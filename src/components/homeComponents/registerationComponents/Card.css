@@ -1,0 +1,26 @@
+@keyframes slideAndRotate {
+    0% {
+      transform: translateX(-100%) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0) rotate(180deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  .shadow{
+    box-shadow:
+    0 0 60px 30px #fff,  
+    0 0 100px 60px #f0f, 
+    0 0 140px 90px #0ff; 
+  }
+  
+  
+  .animated-image {
+    animation: slideAndRotate 1s ease-in-out;
+  }
