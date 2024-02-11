@@ -165,11 +165,12 @@ const content = [
 
 const Event = () => {
   return (
+    <>
     <div className="w-screen relative">
     <div className=" text-white mt-[100px] sm:mt-[150px] left-[10px] sm:left-10 overflow-auto relative flex items-center justify-center w-screen sm:w-[1455px] parent mb-0">
       <div className="flex flex-col sm:flex-row flex-wrap overflow-auto mx-auto pt-9 w-[90%] sm:w-[100%] mb-0 ">
         {content.map((item) => (
-          <div className="  w-full sm:w-1/3 px-2 sm:px-8 sm:px-8 rounded-2xl" key={item.id}>
+          <div className="  w-full sm:w-1/3 px-2 sm:px-8 rounded-2xl" key={item.id}>
             <Cards content={item} />
           </div>
         ))}
@@ -178,7 +179,7 @@ const Event = () => {
       </div>
 
       <Footer />
-
+</>
   );
 };
 
