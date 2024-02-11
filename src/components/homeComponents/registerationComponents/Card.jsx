@@ -28,7 +28,10 @@ const Card = ({ item, index }) => {
                 <li>{item?.p2}</li>
                 <li>{item?.p3}</li>
                 <li>
-                  <a href="" className="text-center">
+                  <a
+                    href="https://forms.gle/GtswDucZwmD81DqcA"
+                    className="text-center"
+                  >
                     <button className="mt-[20px] inline-flex items-center  font-extrabold	 text-white text-2xl bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800  rounded-lg  px-5 py-2.5 mb-2">
                       {item?.button}
                       <svg
