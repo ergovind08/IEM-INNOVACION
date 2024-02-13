@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 const Card4 = () => {
   return (
     <>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-[70vh] sm:h-screen">
         <div className="flex w-5xl h-[600px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
           <div className="h-full lg:w-[500px]  lg:h-[500px] w-full md:h-[200px] md:w-[300px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none">
             <img
@@ -29,13 +29,7 @@ const Card4 = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, debitis? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Excepturi, debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Excepturi, debitis? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+                consectetur adipisicing elit. Excepturi, debitis?
               </h4>
             </div>
             <div className="mt-4 flex-row">

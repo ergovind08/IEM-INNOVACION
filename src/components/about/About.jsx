@@ -17,31 +17,28 @@ const About = () => {
   };
 
   return (
-    <div className="conatiner">
-      <AboutSlider />
+    <div className="conatainer">
+      {/* <AboutSlider /> */}
 
       <div
-        className="container w-[1200px] flex-col"
+        className="container w-screen sm:w-[1200px] flex-col"
         style={{ fontFamily: "montserrat" }}
       >
         <Name className=" text-white " style={{ fontFamily: "montserrat" }} />
         <div>
-          <div
+
+          <div className="flex sm:flex-row flex-col justify-between items-center "
             style={{
               fontFamily: "montserrat",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
               maxWidth: "auto",
             }}
           >
             <VerticalTabs
-              className=" "
+              className=""
               value={activeTab}
               onChange={handleTabChange}
             />
-            {activeTab === 0 && <Card className="ml-10  rounded-xl" />}{" "}
+            {activeTab === 0 && <Card className="ml-10 rounded-xl" />}{" "}
             {activeTab === 1 && (
               <div>
                 <Card2 />
