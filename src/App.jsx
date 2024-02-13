@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 // import Login from "./components/registeration/Login";
 import MainEvents from "./components/MainEvents/MainEvents";
+import Team from "./components/team/Team";
 
 function App() {
   return (
@@ -22,16 +23,19 @@ function App() {
       />
       <Universe className="container w-full h-full" />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/events" element={<Event />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/schedule" element={<Schedule />} />
-        {/* <Route path="/login" element={<Login />} /> */}
-      </Routes>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/events" element={<Event />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/schedule" element={<Schedule />} />
+           <Route path="/team" element={<Team/>} />
+        </Routes>
+      </div>
+     
     </BrowserRouter>
   );
 }
