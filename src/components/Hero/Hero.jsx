@@ -14,7 +14,7 @@ const Hero = () => {
         className={`${classes.hero} justify-center  mt-0 w-full h-full -z-30`}
         style={{
           fontFamily: "montserrat",
-          borderRadius: 60000,
+          // borderRadius: 60000,
           backdropFilter: 20,
           // background: "transparent",
         }}
