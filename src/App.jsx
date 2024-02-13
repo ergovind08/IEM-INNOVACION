@@ -16,24 +16,22 @@ import MainEvents from "./components/MainEvents/MainEvents";
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-screen h-screen">
-        <Navbar
-          className="container relative text-white w-screen h-screen"
-          style={{ fontFamily: "montserrat" }}
-        />
-        <Universe />
+      <Navbar
+        className="container text-white w-full h-full"
+        style={{ fontFamily: "montserrat" }}
+      />
+      <Universe className="container w-full h-full" />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/events" element={<Event />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/schedule" element={<Schedule />} />
-          {/* <Route path="/login" element={<Login />} /> */}
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/events" element={<Event />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/schedule" element={<Schedule />} />
+        {/* <Route path="/login" element={<Login />} /> */}
+      </Routes>
     </BrowserRouter>
   );
 }

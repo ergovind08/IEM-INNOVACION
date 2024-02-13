@@ -1,38 +1,28 @@
 import React from "react";
 import { useState } from "react";
 import classes from "./Navbar.module.css";
-import * as Scroll from "react-scroll";
-
 import { FiMenu } from "react-icons/fi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-
 import { HashLink as Link } from "react-router-hash-link";
-// import Dropdown from "./Dropdown";
-import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/Logo.png";
-import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
 import Iemlogo from "../../assets/images.png";
 import Uemlogo from "../../assets/uem.png";
 import clickSound from "./echo.mp3";
 import hoverSound from "./hover1.wav";
 
-// const Scroll = require("react-scroll");
-
 const Navbar = () => {
-  const Drop = Scroll.Link;
   const [scrolled, isScrolled] = useState(false);
   const [mobile, setMobile] = useState(false);
-  // const [drop, setDrop] = useState(false);
   const audioRef = React.useRef(null);
   const hoverAudioRef = React.useRef(null);
 
   const handleChange = () => {
     audioRef.current.play();
   };
+
   const handleMouseEnter = () => {
-    hoverAudioRef.current.play(); // Play the hover sound when mouse enters
+    hoverAudioRef.current.play();
   };
 
   window.onscroll = () => {
@@ -40,178 +30,97 @@ const Navbar = () => {
     return () => (window.onscroll = null);
   };
 
+  const handleToggleMobileMenu = () => {
+    setMobile(!mobile);
+  };
+
   return (
     <header
       className={`${!scrolled ? classes.header : classes.scrolledHeader}`}
-      style={{ fontFamily: "montserrat" }}
+      style={{ fontFamily: "Montserrat" }}
     >
       <div className={classes.elements}>
         <div className={classes.logobox}>
-          <Drop
-            activeClass={classes.active}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={600}
-          >
-            {/* IEM Logo */}
-            <Link to="/">
-              <img
-                src={Iemlogo}
-                alt="/"
-                className={`${classes.logo} -mb-[20px] mt-0`}
-              />
-            </Link>
-          </Drop>
+          <Link to="/">
+            <img
+              src={Iemlogo}
+              alt="/"
+              className={`${classes.logo} -mb-[20px] mt-0`}
+            />
+          </Link>
         </div>
 
-        {/* Desktop Menu */}
         <div className={classes.navbox}>
-          <ul className={classes.nav}>
+          <ul className={`${classes.nav} ${mobile ? classes.mobileNav : ""}`}>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="home"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link
-                  className={classes.homeLink}
-                  style={{ fontFamily: "montserrat" }}
-                  to="/"
-                  onClick={handleChange}
-                  onMouseEnter={handleMouseEnter}
-                >
-                  Home
-                </Link>
-              </Drop>
+                Home
+              </Link>
             </li>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="about"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/about"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link
-                  className={classes.homeLink}
-                  style={{ fontFamily: "montserrat" }}
-                  to="/about"
-                  onClick={handleChange}
-                  onMouseEnter={handleMouseEnter}
-                >
-                  About
-                </Link>
-              </Drop>
+                About
+              </Link>
             </li>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="about"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/schedule"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link
-                  className={classes.homeLink}
-                  style={{ fontFamily: "montserrat" }}
-                  to="/schedule"
-                  onClick={handleChange}
-                  onMouseEnter={handleMouseEnter}
-                >
-                  Schedule
-                </Link>
-              </Drop>
+                Schedule
+              </Link>
             </li>
-
-            <Link
-              to="/events"
-              onClick={handleChange}
-              onMouseEnter={handleMouseEnter}
-            >
-              <li
-                className={`${classes.dropLink} mr-0 mb-0`}
-                // onClick={() => setDrop(!drop)}
+            <li className={classes.navLink}>
+              <Link
+                className={classes.homeLink}
+                to="/events"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
               >
-                {/* {drop ? <Dropdown click={() => setDrop(!drop)} /> : ""} */}
                 Events
-                {/* <FontAwesomeIcon
-                  size="sm"
-                  style={{
-                    display: "inline-block",
-                    marginLeft: "0.4rem",
-                    color: "white",
-                  }}
-                  icon={faArrowDown}
-                  fade
-                /> */}
-              </li>
-            </Link>
-            <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <Link
-                  className={classes.homeLink}
-                  style={{ fontFamily: "montserrat" }}
-                  to="/team"
-                  onClick={handleChange}
-                  onMouseEnter={handleMouseEnter}
-                >
-                  Team
-                </Link>
-              </Drop>
+              </Link>
             </li>
             <li className={classes.navLink}>
-              <Drop
-                activeClass={classes.active}
-                to="contact"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/team"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link
-                  className={classes.homeLink}
-                  style={{ fontFamily: "montserrat" }}
-                  to="/contact"
-                  onClick={handleChange}
-                  onMouseEnter={handleMouseEnter}
-                >
-                  Contact
-                </Link>
-              </Drop>
+                Team
+              </Link>
+            </li>
+            <li className={classes.navLink}>
+              <Link
+                className={classes.homeLink}
+                to="/contact"
+                onClick={handleChange}
+                onMouseEnter={handleMouseEnter}
+                style={{ fontFamily: "Montserrat" }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
-          {/* <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://grabbits.vercel.app/"
-          >
-            {/* <button className={classes.btn}>GrabBit</button> */}
-          {/* <div className={classes.btn}>
-              <GrabBitBtn label="GrabBit" />
-            </div> */}
-          {/* </a> */}
-
-          <div className={classes.hamburger} onClick={() => setMobile(!mobile)}>
+          <div className={classes.hamburger} onClick={handleToggleMobileMenu}>
             {mobile ? (
               <FontAwesomeIcon
                 icon={faXmark}
@@ -224,7 +133,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* UEM Logo */}
         <Link to="/">
           <img
             src={Uemlogo}
@@ -233,114 +141,71 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Mobile Menu */}
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
-          {/* <a target="_blank" rel="noopener noreferrer" href="">
-            <button className={classes.btn1}>GrabBit</button>
-            <div className={classes.btn1}>
-              <GrabBitBtn label="GrabBit" />
-            </div>
-          </a> */}
-
-          {/* Mobile Page */}
-
           <ul className={classes.mobileNav}>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="home"
-                spy="true"
-                smooth={true}
-                offset={-120}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <HashLink className={classes.homeLink} to="/">
-                  Home
-                </HashLink>
-              </Drop>
+                Home
+              </Link>
             </li>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="about"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/about"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link className={classes.homeLink} to="/about">
-                  About
-                </Link>
-              </Drop>
+                About
+              </Link>
             </li>
-            <Link to="/events">
-              <li
-                className={`${classes.mobLink}`}
-                // onClick={() => setDrop(!drop)}
+            <li>
+              <Link
+                className={classes.homeLink}
+                to="/schedule"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
               >
-                {/* {drop ? (
-                <Dropdown
-                  click={() => {
-                    setDrop(!drop);
-                    setMobile(!mobile);
-                  }}
-                />
-              ) : (
-                ""
-              )} */}
+                Schedule
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={classes.homeLink}
+                to="/events"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
+              >
                 Events
-                <FontAwesomeIcon
-                  size="sm"
-                  style={{
-                    display: "inline-block",
-                    marginLeft: ".3rem",
-                    color: "white",
-                  }}
-                  icon={faArrowDown}
-                  fade
-                />
-              </li>
-            </Link>
-            <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <Link className={classes.homeLink} to="/leaderboard">
-                  Team
-                </Link>
-              </Drop>
+              </Link>
             </li>
             <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="contact"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
+              <Link
+                className={classes.homeLink}
+                to="/team"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
               >
-                <Link className={classes.homeLink} to="/contact">
-                  Contact
-                </Link>
-              </Drop>
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={classes.homeLink}
+                to="/contact"
+                onClick={handleToggleMobileMenu}
+                style={{ fontFamily: "Montserrat" }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-      {/* Audio element for the sound effect */}
       <audio ref={audioRef} src={clickSound} />
       <audio ref={hoverAudioRef} src={hoverSound} />
     </header>

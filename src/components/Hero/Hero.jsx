@@ -3,7 +3,7 @@ import classes from "./Hero.module.css";
 import { Link } from "react-router-dom";
 import Button from "../common/Button/Button";
 import text_img from "./text.svg";
-
+import img from "../homeComponents/ImageFolder/img.gif";
 import Innovacion from "../../components/homeComponents/Innovacion/Innovacion";
 // import { logo } from "../../../../../logo";
 const Hero = () => {
@@ -11,8 +11,13 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={`${classes.hero} justify-center mt-0 w-full h-full -z-30`}
-        style={{ fontFamily: "montserrat" }}
+        className={`${classes.hero} justify-center  mt-0 w-full h-full -z-30`}
+        style={{
+          fontFamily: "montserrat",
+          // borderRadius: 60000,
+          backdropFilter: 20,
+          // background: "transparent",
+        }}
       >
         <div className={` ${classes.headText1}  w-full `}>
           
