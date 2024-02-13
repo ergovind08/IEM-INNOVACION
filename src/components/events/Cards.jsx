@@ -21,7 +21,7 @@ export function Cards({ content }) {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      style={{ fontFamily: "montserrat" }}
+      style={{ fontFamily: "montserrat", background: "transparent" }}
     >
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -74,7 +74,7 @@ export function Cards({ content }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <CardFooter className="">
+            <CardFooter className="bg-transparent">
               <motion.Button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

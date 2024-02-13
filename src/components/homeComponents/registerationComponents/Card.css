@@ -22,5 +22,5 @@
   
   
   .animated-image {
-    animation: slideAndRotate 2s ease-in-out;
+    animation: slideAndRotate 1s ease-in-out;
   }
