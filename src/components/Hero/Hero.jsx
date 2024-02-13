@@ -14,12 +14,12 @@ const Hero = () => {
         className={`${classes.hero} justify-center mt-0 w-full h-full -z-30`}
         style={{ fontFamily: "montserrat" }}
       >
-        <div className=":w-full ">
+        <div className={` ${classes.headText1}  w-full `}>
           
-        <Innovacion className=" absolute z-200 my-[300px] headText1" />
+        <Innovacion className=" absolute z-200 my-[300px]" />
         </div>
         <div className={`${classes.herobox}`}>
-          <div className={classes.headerbox} style={{ marginTop: "-350px" }}>
+          {/* <div className={classes.headerbox} > */}
             <h1 className={`${classes.heading} text-extrabold`}>
               <span>I</span>
               <span>n</span>
@@ -39,12 +39,11 @@ const Hero = () => {
             >
               March 8-10, 2024
             </p>
-          </div>
+          {/* </div> */}
         </div>
-        {/* <div className="w-full sm:w-0">
-
+        <div className={` ${classes.headText2}  w-full `}>
       <Innovacion className=" absolute w-screen z-200 top-[80%] my-[300px] headText2 " />
-        </div> */}
+        </div>
       </section>
     </>
   );
