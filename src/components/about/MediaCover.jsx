@@ -56,7 +56,7 @@ function Gallery() {
               whileTap={{ scale: 1 }}
               transition={{ duration: 0.2 }}
               style={{
-                border: "1px solid rgba(0, 0, 0, 0.1)",
+                // border: "1px solid rgba(0, 0, 0, 0.1)",
                 borderRadius: "10px",
                 overflow: "hidden",
                 position: "relative",

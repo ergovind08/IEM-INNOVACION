@@ -104,7 +104,7 @@ const Events = () => {
 
   return (
     <div
-      className="bg-blue-500 bg-opacity-10 py-2 my-8"
+      className="bg-blue-500 bg-opacity-10 py-2 my-8 mt-[70px] "
       style={{ fontFamily: "montserrat" }}
     >
       <h3 className="my-3 mt-8 text-6xl  font-bold text-center">Events</h3>
