@@ -12,13 +12,17 @@
   margin: 0;
   opacity: 1;
   width: 100%;
+  /* position: relative; */
 }
 
 .hero {
   width: 100vw;
   height: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url("./Hero.svg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("./Hero.svg"); */
+
+  background-image: url("./Hero.svg");
+
   filter:grayscale(0%);
   /* filter: opacity(20%); */
   
@@ -30,6 +34,8 @@
 
   opacity:1;
   margin-left: 10px;
+  overflow: hidden;
+  position: relative;
   
 }
 

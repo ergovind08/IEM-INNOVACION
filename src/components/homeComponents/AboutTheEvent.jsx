@@ -21,9 +21,9 @@ const AboutTheEvent = () => {
       initial={{ scale: 0 }}
       animate={{ scale: 1.2 }}
       transition={{ duration: 0.8 }}
-      className="p-5"
+      className="p-5 my-12"
     >
-      <TypewriterAnimation />
+      {/* <TypewriterAnimation /> */}
       <div style={{ fontFamily: "montserrat" }}>
         <div className="container bg-slate-900/20 border-fuchsia-500/20 p-3 sm:w-1/2 border-y-4 rounded">
           <p className="brightness-100 font-bold text-lg mx-auto ">
@@ -42,7 +42,7 @@ const AboutTheEvent = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap text-cyan-400  flex-row-reverse items-center justify-around sm:w-[80%] w-full gap-3 sm:px-8 py-4 mx-auto">
+      <div className="flex flex-wrap text-cyan-400  flex-row-reverse items-center justify-around sm:w-[80%] w-full gap-3 sm:px-8 py-4 mx-auto mt-5 ">
         {EventsCardContent.map((item, index) => {
           return (
             <EventCard
