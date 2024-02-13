@@ -33,9 +33,7 @@ function App() {
           <Route path="/partners" element={<Partners />} />
           <Route path="/schedule" element={<Schedule />} />
            <Route path="/team" element={<Team/>} />
-        </Routes>
-      </div>
-     
+        </Routes>  
     </BrowserRouter>
   );
 }
