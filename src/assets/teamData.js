@@ -29,7 +29,7 @@ const teamData = [
       teamName: "Team B",
       members: [
         {
-          name: "Emily Brown",
+          name: "Emily Bro",
           role: "QA Tester",
           image: "https://example.com/emily.jpg",
           linkedin: "https://linkedin.com/in/emilybrown",
