@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 // import Login from "./components/registeration/Login";
 import MainEvents from "./components/MainEvents/MainEvents";
+import Team from "./components/team/Team";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/schedule" element={<Schedule />} />
-          {/* <Route path="/login" element={<Login />} /> */}
+           <Route path="/team" element={<Team/>} />
         </Routes>
       </div>
     </BrowserRouter>
