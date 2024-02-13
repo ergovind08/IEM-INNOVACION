@@ -15,7 +15,7 @@ export const EventsCardContent = [
     color: "#39f032",
   },
   {
-    title: "25K+",
+    title: "25+",
     description: "EVENTS",
     color: "#f7e923",
   },

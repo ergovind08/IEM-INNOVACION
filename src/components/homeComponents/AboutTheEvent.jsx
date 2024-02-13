@@ -42,7 +42,7 @@ const AboutTheEvent = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap text-cyan-400  flex-row-reverse items-center justify-around sm:w-[80%] w-full gap-3 sm:px-8 py-4 mx-auto mt-5 ">
+      <div className=" grid grid-cols-2 sm:flex sm:flex-wrap text-cyan-400  sm:flex-row-reverse items-center justify-around sm:w-[80%] w-full gap-3 sm:px-8 py-4 mx-auto mt-5 ">
         {EventsCardContent.map((item, index) => {
           return (
             <EventCard

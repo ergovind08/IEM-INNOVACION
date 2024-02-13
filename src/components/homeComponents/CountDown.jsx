@@ -6,7 +6,7 @@ const AnimatedBorder = ({ children }) => {
   return (
     <div className="flex items-center justify-center text-center ">
       <motion.div
-        className="px-4 py-3 sm:py-7 bg-slate-950 border-2 rounded-full"
+        className=" w-[120px] h-[120px] px-4 py-4 sm:py-7 bg-slate-950 border-2 rounded-full"
         initial={{ borderColor: "#000" }}
         animate={{
           borderColor: ["#f00", "#0f0", "#00f", "#f00", "#04f"],
@@ -74,7 +74,7 @@ const Countdown = () => {
         animate={controls}
         className="grid mb-10 sm:grid-cols-5 grid-cols-2 sm:grid-rows-1 gap-3"
       >
-        <AnimatedBorder className="   text-center">
+        <AnimatedBorder className="text-center">
           <div className=" text-3xl sm:text-5xl font-semibold">
             {timeRemaining.days}
           </div>

@@ -119,15 +119,15 @@
   background-image: linear-gradient(to top left, #09b326, #32b4ed);
 } */
 
-.btn:active {
-  /* transform: translateY(0); */
+/* .btn:active {
+  transform: translateY(0); */
   /* transform: translateY(-0.1rem);
-  background-image: linear-gradient(to top left, #09b326, #32b4ed); */
+  background-image: linear-gradient(to top left, #09b326, #32b4ed);
 }
 
 .anchorBtn {
-  /* text-decoration: none; */
-}
+  text-decoration: none;
+} */
 
 .date {
   color: #fff;
