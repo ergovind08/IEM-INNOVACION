@@ -1,4 +1,9 @@
 import robot from "./robot.png";
+import Img1 from "./imageEvents/img1.png";
+import Img2 from "./imageEvents/img2.png";
+import Img3 from "./imageEvents/img3.png";
+import Img4 from "./imageEvents/img4.png";
+import Img5 from "./imageEvents/img5.png";
 
 export const reg_data = [
   {
@@ -9,6 +14,7 @@ export const reg_data = [
     p3: "Certificates of Participation for all the Events.",
     button: "Pay",
     url: "https://forms.gle/GtswDucZwmD81DqcA",
+    img: Img4,
   },
   {
     heading: "Event Registration",
@@ -19,18 +25,21 @@ export const reg_data = [
     subheading: ``,
     button: "Pay",
     url: "https://forms.gle/GtswDucZwmD81DqcA",
+    img: Img3,
   },
   {
     heading: "School Registration",
     p1: "Registration for school students.",
     button: "Free",
     url: "https://forms.gle/F1yaYdBFDttmQ68F8",
+    img: Img2,
   },
   {
     heading: "International Registration",
     p1: "Register for $10 for any one event.",
     button: "Pay",
     url: "https://forms.gle/ESJxqy5D8vSePsM99",
+    img: Img5,
   },
   {
     heading: "Gaming Registration",
@@ -43,5 +52,6 @@ export const reg_data = [
       "Battleground Championship-COD Mobile: Rs 100 per person Valiants Championship-VALORANT: Rs 200 per person FIFA Championship-FIFA: Rs 200 per person",
     button: "Register as Individual",
     url: "https://forms.gle/yeMtEd8GKNyefYYh8",
+    img: Img1,
   },
 ];

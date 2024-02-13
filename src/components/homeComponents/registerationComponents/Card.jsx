@@ -22,26 +22,26 @@ const Card = ({ item, index }) => {
   }, [index]);
 
   const imageAnimate = {
-    offscreen: { x: -500, opacity: 0 },
+    offscreen: { x: -100, opacity: 0, rotate: -70 },
     onscreen: {
       x: 0,
-      rotate: 390,
+      rotate: 10,
       opacity: 1,
-      transition: { type: "spring", bounce: 0.7, duration: 3 },
+      transition: { type: "spring", bounce: 0.2, duration: 2 },
     },
   };
   const textAnimate = {
-    offscreen: { x: -500, opacity: 0, scale: 0.8 },
+    offscreen: { x: -500, opacity: 0, scale: 0.2 },
     onscreen: {
       x: 0,
       opacity: 1,
       scale: 1,
-      transition: { type: "spring", bounce: 0.4, duration: 2 },
+      transition: { type: "bounce", bounce: 0.4, duration: 0.2 },
     },
   };
 
   return (
-    <div className="container max-w-[1200px] -pb-5">
+    <div className="container max-w-[1200px] -pb-1">
       {(index === 0 || index === 1 || index === 3 || index === 2) && (
         <motion.div
           className={`w-full flex overflow-hidden relative px-10 py-2 items-center justify-center ${
@@ -57,20 +57,20 @@ const Card = ({ item, index }) => {
             variants={imageAnimate}
           >
             <img
-              src={robot}
+              src={item?.img}
               alt="Robot"
-              className="w-full h-full object-contain md:w-auto md:h-auto max-w-[300px]"
+              className="w-full h-full object-contain md:w-auto md:h-auto max-w-[400px]"
             />
           </motion.div>
           <div className="container flex  items-center flex-col md:gap-4 w-full md:w-auto h-[460px]">
             <motion.h2
-              className="mt-[2px] font-bold text-center md:text-[60px] text-[40px] text-white undefined"
+              className="mt-[0px] font-bold text-center md:text-[60px] text-[40px] text-white undefined"
               variants={textAnimate}
             >
               {item?.heading}
             </motion.h2>
             <motion.div
-              className="container flex flex-col items-center gap-2 md:gap-2 my-2 font-normal text-[17px] text-yellow-200"
+              className="container flex flex-col items-center gap-2 md:gap-2 my-2 font-normal text-[18px] text-yellow-200"
               variants={textAnimate}
             >
               <ul>
@@ -121,7 +121,7 @@ const Card = ({ item, index }) => {
             variants={imageAnimate}
           >
             <img
-              src={robot}
+              src={item.img}
               alt="Robot"
               className="w-full h-full object-contain md:w-auto md:h-auto max-w-[300px]"
             />
