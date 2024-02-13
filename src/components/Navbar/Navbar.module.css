@@ -7,7 +7,9 @@
   color: white;
   z-index: 200;
   transition: all 0.4s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.744);
+  background-color: rgba(249, 249, 249, 0.862);
+  backdrop-filter: blur(10px);
+  background-color: transparent;
   
   top: 2%;
   padding-top:2px;

@@ -10,8 +10,11 @@
   height: 100%;
   padding: 40px;
   margin: 0;
-  opacity: 1;
+  opacity: 0.98;
   width: 100%;
+  backdrop-filter: blur(9px);
+  background-color: transparent;
+
 }
 
 .hero {
@@ -20,11 +23,13 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
     url("./Hero.svg");
   filter:grayscale(0%);
-  /* filter: opacity(20%); */
+  filter: opacity(100%);
   
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
   /* opacity:1; */
   /* color:white; */
 
@@ -41,7 +46,7 @@
   padding: 10px;
 }
 
-/* @keyframes move3d {
+@keyframes move3d {
   0% {
     transform: translateX(0);
   }
@@ -51,7 +56,7 @@
   100% {
     transform: translateX(0);
   }
-} */
+}
 
 .heading {
   font-family: "montserrat";
@@ -60,18 +65,18 @@
   display: inline-block;
   background-image: linear-gradient(to bottom, #e8eef4,  #e8eef4 , #ea1362 ,#ea1362 );
   background-clip: text;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   opacity:10;
   filter: grayscale(0%);
   text-shadow: 12px 18px 9px rgba(255, 255, 255, 0.1);
   padding: 0;
-  transition: transform 0.5s ease; 
+  transition: transform 1s ease; 
   -ms-perspective-origin-x: 300;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-10%, -10%);
   transform: translate(-50%, -50%);
 }
 
@@ -201,6 +206,59 @@
   }
 
   .date{
+    font-size: 2rem;
+    margin-top: 16px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .herobox {
+    justify-content: center;
+  }
+
+  .hero {
+    background-position: center center;
+    margin-top: 650px;
+    max-height: 650px;
+  }
+
+  .logo {
+    width: 50rem; /* Adjust this value as needed for mobile */
+  }
+
+  .text_img {
+    width: 300px; /* Adjust this value as needed for mobile */
+  }
+
+  .headerbox {
+    padding: 2rem 0;
+  }
+
+  .heading {
+    font-size: 74px; /* Adjust this value as needed for mobile */
+  }
+
+  .btn {
+    display: block;
+    background-image: linear-gradient(to top right, #09b326, #32b4ed);
+    /* padding: 1.1rem 0.5rem; */
+    margin-top: -40px;
+    border: none;
+    border-radius: 1px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    width: 30rem; /* Adjust this value as needed for mobile */
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .countdownbox {
+    column-gap: 1rem;
+  }
+
+  .date {
     font-size: 2rem;
     margin-top: 16px;
   }
