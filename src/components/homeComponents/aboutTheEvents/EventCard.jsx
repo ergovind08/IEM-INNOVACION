@@ -10,7 +10,7 @@ const EventCard = ({ item, delay }) => {
       whileHover={{ scale: 1 }}
       whileTap={{ scale: 0.98 }}
       style={{ fontFamily: "montserrat" }}
-      className="text-orange-600	rounded-2xl  bg-[#111] sm:w-[160px] sm:h-[120px] md:w-[200px] md:h-[150px]   card"
+      className="text-orange-600	rounded-2xl  bg-[#111] w-[160px] h-[120px] md:w-[200px] md:h-[150px]   card"
     >
       <motion.div className="flex flex-col w-full h-full place-content-center event-card">
         <span className="text-2xl text-orange-200 font-bold text-center ">

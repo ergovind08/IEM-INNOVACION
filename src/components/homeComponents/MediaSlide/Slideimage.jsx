@@ -63,12 +63,14 @@ const Slideimage = () => {
       >
         Memories
       </h1>
-      <div className="w-40 h-1 mx-auto mt-3  text-gray-100 bg-gray-100 rounded"></div>
+      <div className="w-40 h-1 mx-auto mt-[1rem] sm:mt-3  text-gray-100 bg-gray-100 rounded"></div>
+
       <div
         className="container text-black flex-col"
         style={{ fontFamily: "montserrat" }}
       >
-        <div id="app" className="container   -mt-4">
+        {/* Images */}
+        <div id="app" className="container sm:flex sm:flex-row grid grid-cols-2 -mt-4">
           {dataImages
             .slice(currentIndex, currentIndex + 4)
             .map((image, index) => (
@@ -85,6 +87,8 @@ const Slideimage = () => {
               </Card>
             ))}
         </div>
+
+        {/* Next Prev Button */}
         <div className="flex justify-center ">
           <button
             onClick={slidePrev}

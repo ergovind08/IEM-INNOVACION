@@ -21,7 +21,7 @@ export function Cards({ content }) {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      style={{ fontFamily: "montserrat" }}
+      style={{ fontFamily: "montserrat", background: "transparent" }}
     >
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -29,7 +29,7 @@ export function Cards({ content }) {
         transition={{ duration: 0.2 }}
       >
         <Card
-          className="flex mb-10 justify-center w-96 border-1 bg-transparent p-3"
+          className="flex mb-10 justify-center w-[100%] h-full sm:w-96 border-1 bg-transparent p-3 "
           style={{ borderColor: "gray", backgroundColor: "transparent" }}
         >
           <motion.div
@@ -37,7 +37,7 @@ export function Cards({ content }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <CardHeader color="blue-gray" className="relative m-3 h-56">
+            <CardHeader color="blue-gray" className="relative sm:m-3  sm:h-56">
               <img
                 src={
                   content.url
@@ -56,7 +56,7 @@ export function Cards({ content }) {
             <Typography
               variant="h5"
               color="blue-gray"
-              className="text-center text-2xl  text-white mb-3"
+              className="text-center text-2xl text-white my-3"
               style={{ fontFamily: "montserrat" }}
             >
               {content.texthead}
@@ -74,7 +74,7 @@ export function Cards({ content }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <CardFooter className="">
+            <CardFooter className="bg-transparent">
               <motion.Button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

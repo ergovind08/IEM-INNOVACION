@@ -17,12 +17,12 @@ import Team from "./components/team/Team";
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-screen h-screen">
-        <Navbar
-          className="container  relative text-white w-screen h-screen"
-          style={{ fontFamily: "montserrat" }}
-        />
-        <Universe />
+      <Navbar
+        className="container text-white w-full h-full"
+        style={{ fontFamily: "montserrat" }}
+      />
+      <Universe className="container w-full h-full" />
+
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,6 +35,7 @@ function App() {
            <Route path="/team" element={<Team/>} />
         </Routes>
       </div>
+     
     </BrowserRouter>
   );
 }

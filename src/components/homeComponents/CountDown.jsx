@@ -6,7 +6,7 @@ const AnimatedBorder = ({ children }) => {
   return (
     <div className="flex items-center justify-center text-center ">
       <motion.div
-        className="px-4 py-3 sm:py-7 bg-slate-950 border-2 rounded-full"
+        className=" w-[120px] h-[120px] px-4 py-4 sm:py-7 bg-slate-950 border-2 rounded-full"
         initial={{ borderColor: "#000" }}
         animate={{
           borderColor: ["#f00", "#0f0", "#00f", "#f00", "#04f"],
@@ -57,10 +57,9 @@ const Countdown = () => {
       }}
     >
       <motion.h1
-        className="text-slate-600  text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container"
+        className="text-slate-600 text-bold sm:text-center text-bold decoration-sky-500/60 shadow-2xl font-mono hover:text-sky-700 text-5xl sm:text-7xl container sm:-ml-[90px] my-3 "
         style={{
           fontFamily: "montserrat",
-          marginLeft: "-90px",
         }}
       >
         Commences <span className="p-3"></span>
@@ -75,7 +74,7 @@ const Countdown = () => {
         animate={controls}
         className="grid mb-10 sm:grid-cols-5 grid-cols-2 sm:grid-rows-1 gap-3"
       >
-        <AnimatedBorder className="   text-center">
+        <AnimatedBorder className="text-center">
           <div className=" text-3xl sm:text-5xl font-semibold">
             {timeRemaining.days}
           </div>
@@ -134,7 +133,7 @@ function getTimeRemaining(targetDate) {
 
 function App() {
   return (
-    <div className="w-full h-[300px] flex my-2 py-2 sm:ml-5 justify-center items-center bg-cover bg-no-repeat">
+    <div className="w-full h-[300px] flex my-10 py-2 sm:ml-5 justify-center items-center bg-cover bg-no-repeat">
       <Countdown />
     </div>
   );

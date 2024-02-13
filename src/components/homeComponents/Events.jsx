@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import Robotics from "./ImageForEvents/Robotics.png";
+import Exhibition from "./ImageForEvents/exhibition.png";
+import Game from "./ImageForEvents/game1.png";
+import Hackathon from "./ImageForEvents/hackathon.png";
+import Management from "./ImageForEvents/management.png";
+import Other from "./ImageForEvents/other.png";
 const Events = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -67,45 +72,39 @@ const Events = () => {
   const eventsItem = [
     {
       name: "Robotics",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/robof.png",
+      imgUrl: Robotics,
       link: "",
     },
     {
       name: "Exhibitions",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/bulbb.png",
+      imgUrl: Exhibition,
       link: "",
     },
     {
       name: "Gaming",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/game.png",
+      imgUrl: Game,
       link: "",
     },
     {
       name: "Hackathons",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/x%20race.png",
+      imgUrl: Hackathon,
       link: "",
     },
     {
       name: "Management",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/error404.png",
+      imgUrl: Management,
       link: "",
     },
     {
       name: "Others",
-      imgUrl:
-        "https://iem-innovacion.com/Home%20Page/assets/media/Ourevents/quiz.png",
+      imgUrl: Other,
       link: "",
     },
   ];
 
   return (
     <div
-      className="bg-blue-500 bg-opacity-10 py-2"
+      className="bg-blue-500 bg-opacity-10 py-2 my-8 mt-[70px] "
       style={{ fontFamily: "montserrat" }}
     >
       <h3 className="my-3 mt-8 text-6xl  font-bold text-center">Events</h3>
