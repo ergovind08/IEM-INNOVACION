@@ -23,6 +23,7 @@ function App() {
       />
       <Universe className="container w-full h-full" />
 
+<<<<<<< HEAD
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -33,6 +34,19 @@ function App() {
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/team" element={<Team />} />
       </Routes>
+=======
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/events" element={<Event />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/schedule" element={<Schedule />} />
+           <Route path="/team" element={<Team/>} />
+        </Routes>  
+>>>>>>> origin/futureadda
     </BrowserRouter>
   );
 }
