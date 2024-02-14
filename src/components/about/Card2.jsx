@@ -6,7 +6,7 @@ const Card2 = () => {
   return (
     <>
       <div className="flex justify-center items-center h-[80vh] sm:h-screen">
-        <div className="flex w-5xl h-[700px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
+        <div className="flex w-5xl h-[100%] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
           <div className="lg:w-[500px] lg:h-[500px] w-[380px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none mt-4 ">
             <img
               src={eventsimg}

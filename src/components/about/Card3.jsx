@@ -5,7 +5,7 @@ import partnerimg from "./ImageFolder/partner.png";
 const Card3 = () => {
   return (
     <>
-      <div className="flex justify-center items-center h-[45vh] mb-8 sm:h-screen">
+      <div className="flex justify-center items-center h-[70vh] mb-8 sm:h-screen">
         <div className="flex  h-[600px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
           {/* <div className="h-full lg:w-[500px]  lg:h-[500px] w-full md:h-[200px] md:w-[300px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none">
             <img

@@ -4,7 +4,7 @@ const Name = () => {
   return (
     <div>
       <div className="mt-[100px]">
-        <h1 className=" pt-5 conbtainer text-bold text-6xl justify-center flex">
+        <h1 className=" pt-5 conbtainer text-bold text-4xl sm:text-6xl justify-center flex">
           {" "}
           Events Details
         </h1>
