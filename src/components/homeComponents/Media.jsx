@@ -29,7 +29,7 @@ const images = [
 
 const Media = () => {
   return (
-    <div className="w-ful " style={{ fontFamily: "montserrat" }}>
+    <div className="w-full " style={{ fontFamily: "montserrat" }}>
       <h2
         className="w-full my-7 text-5xl  font-bold text-center"
         style={{ fontFamily: "montserrat" }}
@@ -38,7 +38,7 @@ const Media = () => {
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
 
-      <div className="grid grid-cols-2 sm:flex overflow-auto sm:overflow-hidden w-full">
+      <div className="grid grid-cols-2   sm:flex overflow-auto sm:overflow-hidden w-full">
         {images.map((image, index) => (
           <div
             key={index}
