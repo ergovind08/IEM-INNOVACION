@@ -57,8 +57,8 @@ const Team = () => {
   };
 
   return (
-    <div className='absolute top-0 w-screen h-screen mt-20 overflow-auto'>
-    <div className='w-full h-[250px]  bg-[#111111] bg-opacity-70 '>
+    <div className='fixed top-0 w-screen h-screen mt-20 overflow-auto'>
+    <div className='w-full h-[240px]  bg-[#111111] bg-opacity-70 py-2'>
     <h2 className='w-full my-10 text-3xl italic font-bold text-center'>TEAM</h2>
     <div className="w-20 h-1 mx-auto mb-[50px] -mt-4 text-gray-100 bg-gray-100 rounded" ></div>
     <div className='w-2/4 m-auto h-[150px]'>
