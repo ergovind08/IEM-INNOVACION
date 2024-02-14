@@ -19,6 +19,20 @@ export const teamData = [
           linkedin: "https://linkedin.com/in/janesmith",
           twitter: "https://twitter.com/janesmith",
         },
+        {
+          name: "Jane Smith",
+          about: "Designer",
+          img: imgURL1,
+          linkedin: "https://linkedin.com/in/janesmith",
+          twitter: "https://twitter.com/janesmith",
+        },
+        {
+          name: "Jane Smith",
+          about: "Designer",
+          img: imgURL1,
+          linkedin: "https://linkedin.com/in/janesmith",
+          twitter: "https://twitter.com/janesmith",
+        },
       ],
     },
     {

@@ -74,7 +74,7 @@ const Team = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
                 className="flex items-center justify-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-4 "
               >
-                <button className="w-full font-bold text-white text-xl sm:text-2xl bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-lg py-2 mb-2">
+                <button className="w-full font-bold text-white text-xl sm:text-2xl bg-gradient-to-bl from-sky-600 hover:from-violet-600 focus:from-violet-600 to-blue-900 hover:to-indigo-600 focus:to-indigo-600 rounded-xl hover:ring-1 hover:ring-blue-300 focus:ring-4 focus:ring-blue-300 py-2 mb-2">
                   {item?.teamName}
                 </button>
               </div>

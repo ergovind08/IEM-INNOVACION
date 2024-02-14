@@ -1,6 +1,8 @@
 import React from 'react';
 // import "./ContactCard.css"
 import { MdOutlineEmail, MdCall } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const Card2 = ({ item }) => {
     return (
@@ -18,10 +20,15 @@ const Card2 = ({ item }) => {
                         <h2 className='text-3xl font-bold'>{item.name}</h2>
                         <p className='text-xl text-gray-300'>{item.about}</p>
                         <div className='flex items-center justify-center w-full gap-2 mt-2'>
-                        <a href={`tel:+91${item.contact}`}>
-                            <MdCall className='cursor-pointer' />
+                        <a href={item.linkedin}>
+                        <FaLinkedin className='cursor-pointer'  />
+                            {/* <MdCall /> */}
                         </a> 
-                            <MdOutlineEmail className='cursor-pointer' />
+                        <a href={item.twitter}>
+                        <RiTwitterXLine  className='cursor-pointer' />
+                        </a>
+                            
+                            {/* <MdOutlineEmail/> */}
                         </div>
                     </div>
                 </div>
