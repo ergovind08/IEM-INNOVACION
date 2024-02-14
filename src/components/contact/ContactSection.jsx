@@ -14,11 +14,6 @@ const ContactSection = () => {
                     ))
                 }
 
-                {
-                    contactContent.map((content, index) => (
-                        <ContactHeadCard key={index} content={content} />
-                    ))
-                }
             </div>
         </div>
     )

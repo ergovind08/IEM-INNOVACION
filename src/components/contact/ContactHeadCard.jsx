@@ -18,7 +18,9 @@ const ContactHeadCard = ({ content }) => {
                         <h2 className='text-xl font-bold'>{content.name}</h2>
                         <p className='text-sm text-gray-300'>{content.about}</p>
                         <div className='flex items-center justify-end w-full gap-2 mt-2'>
-                            <MdCall className='cursor-pointer' />
+                        <a href={`tel:+91${content.contact}`}>
+                        <MdCall className='cursor-pointer' />
+                        </a> 
                             <MdOutlineEmail className='cursor-pointer' />
                         </div>
                     </div>

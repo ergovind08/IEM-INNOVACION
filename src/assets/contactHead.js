@@ -1,34 +1,51 @@
+import default4 from "./default4.jpg"
 export const contactContent = [
     {
         id: 1,
-        img: "https://iem-innovacion.com/Home%20Page/assets/media/team/team5.jpg",
-        name: "Sourav Pramanik",
-        about: "ACCOUNTS & BUDGET",
+        img: default4,
+        name: "Sayan Dey",
+        about: "Logistics",
         email: "",
-        contact: ""
+        contact: "8961838933"
     },
     {
         id: 2,
-        img: "https://iem-innovacion.com/Home%20Page/assets/media/team/team4.jpg",
-        name: "Astha Singh",
-        about: "WEBSITE & REGISTRATION",
+        img: default4,
+        name: "Biswajit Das",
+        about: "Planning and Infrastructure management",
         email: "",
-        contact: ""
+        contact: "9830123475"
     },
     {
         id: 3,
-        img: "https://iem-innovacion.com/Home%20Page/assets/media/team/team5.jpg",
-        name: "Sourav Pramanik",
-        about: "ACCOUNTS & BUDGET",
+        img: default4,
+        name: "Arkaprobho Laha",
+        about: "Registration",
         email: "",
-        contact: ""
+        contact: "7477542614"
     },
     {
         id: 4,
-        img: "https://iem-innovacion.com/Home%20Page/assets/media/team/team5.jpg",
-        name: "Sourav Pramanik",
-        about: "ACCOUNTS & BUDGET",
+        img: default4,
+        name: "Gargi joardar",
+        about: "Social Media and Online Publicity",
         email: "",
-        contact: ""
-    }
+        contact: "8116006315"
+    },
+    {
+    id: 5,
+    img: default4,
+    name: "Sohel Hassan",
+    about: "Photography,Startup Exhibition",
+    email: "",
+    contact: "7980055488"
+},
+{
+    id: 6,
+    img: default4,
+    name: "Soumanka Sarkar",
+    about: "All Project Exhibition",
+    email: "",
+    contact: "9748598127"
+}
 ]
