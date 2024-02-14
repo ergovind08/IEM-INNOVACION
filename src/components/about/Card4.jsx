@@ -1,13 +1,14 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import lastimg from "./ImageFolder/2022.jpg";
 
 const Card4 = () => {
   return (
     <>
-      <div className="flex justify-center items-center h-[70vh] sm:h-screen">
+      <div className="flex justify-center items-center h-[35vh] sm:h-screen">
         <div className="flex w-5xl h-[208px] w-[374px] sm:h-[439px] sm:w-[815px] flex-col-reverse items-center justify-center rounded-md md:flex-row transform border-2 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]">
            <div className="h-full w-full">
-           <img src="src\components\about\ImageFolder\2022.jpg" alt="image2022" />
+           <img src={lastimg} alt="image2022" />
            </div>
 
           {/* <div className="h-full lg:w-[500px]  lg:h-[500px] w-full md:h-[200px] md:w-[300px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none">
