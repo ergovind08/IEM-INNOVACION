@@ -30,7 +30,7 @@
   height: 100vh;
   backdrop-filter: blur(10px);
   background-color: transparent;
-  /* opacity:1; */
+  opacity:1;
   /* color:white; */
 
   opacity:1;
