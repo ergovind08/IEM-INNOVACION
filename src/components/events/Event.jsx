@@ -2,7 +2,6 @@
 import Footer from "../footer/Footer";
 // import EventsDetails from "./EventsDetails";
 import { Cards } from "./Cards";
-import temp from "./cardimage/temp.png";
 import img2 from "./cardimage/robopace.jpg";
 import img4 from "./cardimage/innovare.jpg";
 import img8 from "./cardimage/mathmagic.jpg";
