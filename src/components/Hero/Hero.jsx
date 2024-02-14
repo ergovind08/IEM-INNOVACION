@@ -19,12 +19,9 @@ const Hero = () => {
           // background: "transparent",
         }}
       >
-        <div className={` ${classes.headText1}  w-full `}>
-          
-        <Innovacion className=" absolute z-200 my-[300px]" />
-        </div>
+        <Innovacion className=" absolute w-screen z-200  my-[300px]  " />
         <div className={`${classes.herobox}`}>
-          {/* <div className={classes.headerbox} > */}
+          <div className={classes.headerbox} style={{ marginTop: "-350px" }}>
             <h1 className={`${classes.heading} text-extrabold`}>
               <span>I</span>
               <span>n</span>
@@ -44,10 +41,7 @@ const Hero = () => {
             >
               March 8-10, 2024
             </p>
-          {/* </div> */}
-        </div>
-        <div className={` ${classes.headText2}  w-full `}>
-      <Innovacion className=" absolute w-screen z-200 top-[80%] my-[300px] headText2 " />
+          </div>
         </div>
       </section>
     </>

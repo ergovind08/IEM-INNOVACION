@@ -1,22 +1,26 @@
 import React from "react";
 import "./Media.css"; // Assuming this is the correct path for the styles
 import logo from "./ImageFolder/about.png";
+import IIC from "./ImageForEvents/iic.png";
+import Nascom from "./ImageForEvents/nasscom.png";
+import Iemlab from "./ImageForEvents/iemlab.png";
+import Rotary from "./ImageForEvents/rotary.png";
 
 const images = [
   {
-    url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/4.png",
+    url: IIC,
   },
   {
-    url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/7.png",
+    url: Nascom,
   },
   {
-    url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/8.png",
+    url: Iemlab,
   },
   {
     url: logo,
   },
   {
-    url: "https://iem-innovacion.com/Home%20Page/assets/media/supporters/9.png",
+    url: Rotary,
   },
 ];
 
@@ -30,7 +34,7 @@ const Media = () => {
         Collaborators
       </h2>
       <div className="w-40 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded"></div>
-      
+
       <div className=" grid grid-cols-2 sm:flex overflow-auto sm:overflow-hidden w-full">
         {images.map((image, index) => (
           <div
@@ -40,7 +44,7 @@ const Media = () => {
             <img
               src={image.url}
               alt=""
-              className="object-contain p-2 mx-4 w-[160px] sm:w-[200px] ml-6 h-[7rem] sm:h-60"
+              className="object-contain p- mx-4 w-[160px] sm:w-[200px] ml-6 h-[7rem] sm:h-60"
             />
           </div>
         ))}
