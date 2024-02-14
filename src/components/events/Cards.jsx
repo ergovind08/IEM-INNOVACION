@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import ok1 from "./cardimage/ok1.png";
+
 import {
   Card,
   CardHeader,
@@ -38,14 +40,7 @@ export function Cards({ content }) {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <CardHeader color="blue-gray" className="relative sm:m-3  sm:h-56">
-              <img
-                src={
-                  content.url
-                    ? content.url
-                    : "https://source.unsplash.com/random/800x600"
-                }
-                alt="card-image"
-              />
+              <img src={content.url ? content.url : ok1} alt="card-image" />
             </CardHeader>
           </motion.div>
           <motion.div

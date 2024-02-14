@@ -80,10 +80,12 @@ const Team = () => {
     </Slider>
     </div>
     </div>
+
     <div className="mb-[100px] pt-5 py-4 ml-10 text-white sm:mt-[100px] overflow-auto">
       <div className="flex sm:flex-row flex-col flex-wrap justify-center">
         {member.map((item,index) => (
           <div className=" w-[90%] sm:w-1/3 py-5 sm:px-8 rounded-2xl" key={index}>
+
             <Card content={item}/>
           </div>
         ))}

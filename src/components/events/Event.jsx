@@ -2,6 +2,7 @@
 import Footer from "../footer/Footer";
 // import EventsDetails from "./EventsDetails";
 import { Cards } from "./Cards";
+import temp from "./cardimage/temp.png";
 import img2 from "./cardimage/robopace.jpg";
 import img4 from "./cardimage/innovare.jpg";
 import img8 from "./cardimage/mathmagic.jpg";
@@ -11,12 +12,15 @@ import img16 from "./cardimage/admania.jpg";
 import img19 from "./cardimage/bgmi.jpg";
 import img21 from "./cardimage/fifa.jpg";
 import img18 from "./cardimage/bullmaster.jpg";
-
+import img1 from "./cardimage/TRACKER.png";
+import img12 from "./cardimage/codecraft.png";
+import img20 from "./cardimage/valorants.jpg";
+import img13 from "./cardimage/odessy.jpg";
 
 const content = [
   {
     id: 1,
-    url: "",
+    url: img1,
     texthead: "Tracker",
     textContent:
       "Robots designed with the line following ability compete with others for a  chance at the top prize. The discipline of your automatons are set to be tested  when they enter the tracker arena",
@@ -93,14 +97,14 @@ const content = [
   },
   {
     id: 12,
-    url: "",
+    url: img12,
     texthead: "360CodeCraft",
     textContent:
       "practice of working on all aspects of a software and web application, from the user interface (UI) and user experience (UX) on the front end to server-side scripting, databases, and infrastructure on the back end. It requires a broad skill set and the ability to handle various technologies and programming languages.",
   },
   {
     id: 13,
-    url: "",
+    url: img13,
     texthead: "CodeBreak Odyssey - Offline Coding Hunt",
     textContent:
       "This challenges students, promoting problem-solving skills and a deeper understanding of code structure, fostering cognitive flexibility and intuition. ",
@@ -149,7 +153,7 @@ const content = [
   },
   {
     id: 20,
-    url: "",
+    url: img20,
     texthead: "VALIANTS",
     textContent:
       "Bring your love for gaming and Valorant to the arena. Let the bomb  of your love for gaming explode at Innovación 2024. May the  weapons of your skills define you as an unforgettable OP!",
@@ -166,20 +170,23 @@ const content = [
 const Event = () => {
   return (
     <>
-    <div className="w-screen relative">
-    <div className=" text-white mt-[100px] sm:mt-[150px] left-[10px] sm:left-10 overflow-auto relative flex items-center justify-center w-screen sm:w-[1455px] parent mb-0">
-      <div className="flex flex-col sm:flex-row flex-wrap overflow-auto mx-auto pt-9 w-[90%] sm:w-[100%] mb-0 ">
-        {content.map((item) => (
-          <div className="  w-full sm:w-1/3 px-2 sm:px-8 rounded-2xl" key={item.id}>
-            <Cards content={item} />
+      <div className="w-screen relative">
+        <div className=" text-white mt-[100px] sm:mt-[150px] left-[10px] sm:left-10 overflow-auto relative flex items-center justify-center w-screen sm:w-[1455px] parent mb-0">
+          <div className="flex flex-col sm:flex-row flex-wrap overflow-auto mx-auto pt-9 w-[90%] sm:w-[100%] mb-0 ">
+            {content.map((item) => (
+              <div
+                className="  w-full sm:w-1/3 px-2 sm:px-8 rounded-2xl"
+                key={item.id}
+              >
+                <Cards content={item} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
       </div>
 
       <Footer />
-</>
+    </>
   );
 };
 
