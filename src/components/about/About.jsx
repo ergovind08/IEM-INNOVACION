@@ -8,7 +8,7 @@ import VerticalTabs from "./VerticalTabs";
 import Card2 from "./Card2";
 import Card3 from "./Card3";
 import Card4 from "./Card4";
-
+import './About.css';
 const About = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -34,7 +34,7 @@ const About = () => {
             }}
           >
             <VerticalTabs
-              className=""
+              className="z-[100]"
               value={activeTab}
               onChange={handleTabChange}
             />

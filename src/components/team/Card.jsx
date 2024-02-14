@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({content}) => {
   return (
-    <div className="flex flex-col justify-center border border-2 border-white hover:scale-105 cursor-pointer max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
+    <div className="flex flex-col justify-center border-2 border-white hover:scale-105 cursor-pointer max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
 	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y dark:divide-gray-700">
 		<div className="my-2 space-y-1">
