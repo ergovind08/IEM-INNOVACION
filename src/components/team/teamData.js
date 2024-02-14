@@ -1,6 +1,6 @@
 export const teamData = [
     {
-      teamName: "Team A",
+      teamName: "Graphics",
       members: [
         {
           name: "John Doe",
@@ -26,7 +26,7 @@ export const teamData = [
       ],
     },
     {
-      teamName: "Team B",
+      teamName: "Dev",
       members: [
         {
           name: "Emily Brown",
@@ -52,7 +52,7 @@ export const teamData = [
       ],
     },
     {
-      teamName: "Team C",
+      teamName: "Design",
       members: [
         {
           name: "Michael Johnson",
@@ -78,7 +78,7 @@ export const teamData = [
       ],
     },
     {
-      teamName: "Team D",
+      teamName: "Branding",
       members: [
         {
           name: "Eva Miller",
@@ -104,7 +104,7 @@ export const teamData = [
       ],
     },
     {
-      teamName: "Team E",
+      teamName: "Content",
       members: [
         {
           name: "Samuel Johnson",
