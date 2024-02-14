@@ -63,7 +63,7 @@ function VerticalTabs({ value, onChange }) {
             />
             <Tab
               className="text-white "
-              label="2022"
+              label="Explore"
               style={{ fontFamily: "montserrat", alignItems: "center" }}
             />
           </Tabs>
@@ -117,7 +117,7 @@ function VerticalTabs({ value, onChange }) {
             />
             <Tab
               className="text-white "
-              label="2022"
+              label="Explore"
               style={{ fontFamily: "montserrat", alignItems: "center" }}
             />
           </Tabs>
