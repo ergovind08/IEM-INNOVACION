@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import teamData from "../../assets/TeamData.js";
+import {teamData} from "./teamData.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -57,8 +57,8 @@ const Team = () => {
   };
 
   return (
-    <div className='absolute top-0 w-screen h-screen mt-20 overflow-auto'>
-    <div className='w-full h-[250px]  bg-[#111111] bg-opacity-70 '>
+    <div className='fixed top-0 w-screen h-screen mt-20 overflow-auto'>
+    <div className='w-full h-[240px]  bg-[#111111] bg-opacity-70 py-2'>
     <h2 className='w-full my-10 text-3xl italic font-bold text-center'>TEAM</h2>
     <div className="w-20 h-1 mx-auto mb-[50px] -mt-4 text-gray-100 bg-gray-100 rounded" ></div>
     <div className='w-2/4 m-auto h-[150px]'>
@@ -69,7 +69,7 @@ const Team = () => {
             onClick={() => handleTeamClick(item.members)}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="mx-12 my-2 "
+            className="mx-12 my-2"
           >
             {item.teamName}
           </button>
@@ -79,7 +79,7 @@ const Team = () => {
      </Slider>
     </div>
     </div>
-    <div className="mb-[100px]  pt-5 ml-10 text-white mt-[100px] overflow-auto">
+    <div className="mb-[100px]  pt-5 py-4 ml-10 text-white mt-[100px] overflow-auto">
       <div className="flex flex-wrap justify-center">
         {member.map((item,index) => (
           <div className="w-1/3 px-8 rounded-2xl" key={index}>
