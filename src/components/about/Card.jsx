@@ -1,14 +1,15 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import iemjpg from "./ImageFolder/iem.jpg";
 
 const Card = () => {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <div className="flex w-5xl h-[600px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
-          <div className="h-full lg:w-[500px]  lg:h-[500px] w-full md:h-[200px] md:w-[300px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none">
+      <div className="flex justify-center items-center p-4">
+        <div className="flex w-5xl h-[700px] flex-col-reverse items-center justify-center rounded-md md:flex-row shadow-lg transform ">
+          <div className="h-full lg:w-[500px]  lg:h-[500px] w-full md:h-[200px] md:w-[300px] overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none mt-2">
             <img
-              src="src\components\about\ImageFolder\iem.jpg"
+              src={iemjpg}
               alt="Laptop"
               className="h-full w-full rounded-3xl object-cover"
             />
@@ -26,11 +27,7 @@ const Card = () => {
                 in Kolkata region over the years in its current avatar as
                 innovacion, having leveled up several notches, it has firmly
                 established itself as one of the marquee tech fest in Eastern
-                India over the last couple of years. <br/>Innvoción attracts a
-                football over 10000 every year with a reach of over 500 colleges
-                and schools across the country. The 2015 onwards editions also
-                saw overseas participation from England, Brazil, France, Taiwan
-                and China amongst other countries.<br/> Innovacion is an arena to
+                India over the last couple of years.<br/> Innovacion is an arena to
                 exhibit creativity and latent talent of students in varied
                 dimensions of technology and management. Innovación caters to a
                 wide variety of disciplines ranging from Robotics, Electronics,
