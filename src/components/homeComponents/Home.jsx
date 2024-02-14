@@ -28,7 +28,7 @@ const Home = () => {
       <Hero />
 
       {/* Register Button */}
-      <div className="container absolute top-[50%] sm:top-[78%] left-2/4 -translate-x-2/4 -translate-y-2/4 pb-0 pt-3 ">
+      <div className="container absolute top-[60%] sm:top-[78%] left-2/4 -translate-x-2/4 -translate-y-2/4 pb-0 pt-3 ">
         <Link
           className={`${classes.anchorBtn} justify-center`}
           rel="noopener noreferrer"
